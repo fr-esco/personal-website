@@ -1,0 +1,103 @@
+{
+  "name": "personal-website",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "projectType": "application",
+  "prefix": "app",
+  "sourceRoot": "apps/personal-website/src",
+  "tags": [],
+  "i18n": {
+    "sourceLocale": "en",
+    "locales": {
+      "it": {
+        "translation": "apps/personal-website/src/locale/messages.it.xlf"
+      }
+    }
+  },
+  "targets": {
+    "build": {
+      "executor": "@angular/build:application",
+      "syncGenerators": ["@juristr/nx-tailwind-sync:source-directives"],
+      "outputs": [
+        "{options.outputPath}"
+      ],
+      "defaultConfiguration": "production",
+      "options": {
+        "outputPath": "dist/apps/personal-website",
+        "browser": "apps/personal-website/src/main.ts",
+        "tsConfig": "apps/personal-website/tsconfig.app.json",
+        "assets": [
+          {
+            "glob": "**/*",
+            "input": "apps/personal-website/public"
+          }
+        ],
+        "styles": [
+          "apps/personal-website/src/styles.css"
+        ],
+        "server": "apps/personal-website/src/main.server.ts",
+        "ssr": {
+          "entry": "apps/personal-website/src/server.ts"
+        },
+        "outputMode": "server",
+        "inlineStyleLanguage": "css",
+        "polyfills": ["@angular/localize/init"]
+      },
+      "configurations": {
+        "production": {
+          "budgets": [
+            {
+              "type": "initial",
+              "maximumWarning": "500kb",
+              "maximumError": "1mb"
+            },
+            {
+              "type": "anyComponentStyle",
+              "maximumWarning": "4kb",
+              "maximumError": "8kb"
+            }
+          ],
+          "outputHashing": "all"
+        },
+        "development": {
+          "optimization": false,
+          "extractLicenses": false,
+          "sourceMap": true
+        }
+      }
+    },
+    "serve": {
+      "continuous": true,
+      "executor": "@angular/build:dev-server",
+      "syncGenerators": ["@juristr/nx-tailwind-sync:source-directives"],
+      "defaultConfiguration": "development",
+      "configurations": {
+        "production": {
+          "buildTarget": "personal-website:build:production"
+        },
+        "development": {
+          "buildTarget": "personal-website:build:development"
+        }
+      }
+    },
+    "lint": {
+      "executor": "@nx/eslint:lint"
+    },
+    "serve-static": {
+      "continuous": true,
+      "executor": "@nx/web:file-server",
+      "options": {
+        "buildTarget": "personal-website:build",
+        "staticFilePath": "dist/apps/personal-website/browser",
+        "spa": true
+      }
+    },
+    "extract-i18n": {
+      "executor": "@angular/build:extract-i18n",
+      "options": {
+        "buildTarget": "personal-website:build",
+        "outputPath": "apps/personal-website/src/locale",
+        "outFile": "messages.en.xlf"
+      }
+    }
+  }
+}

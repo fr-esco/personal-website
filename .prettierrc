@@ -1,0 +1,25 @@
+{
+  "plugins": [
+    "prettier-plugin-organize-attributes",
+    "prettier-plugin-tailwindcss"
+  ],
+  "attributeGroups": [
+    "^\\*",
+    "$ATTR_ID",
+    "$ATTR_TYPE",
+    "$ATTR_NAME",
+    "$ATTR_CLASS",
+    "$DEFAULT",
+    "^\\[",
+    "^\\[\\(",
+    "^\\("
+  ],
+  "attributeSort": "ASC",
+  "arrowParens": "avoid",
+  "bracketSameLine": false,
+  "semi": false,
+  "singleAttributePerLine": true,
+  "singleQuote": true,
+  "trailingComma": "es5",
+  "tailwindFunctions": ["hlm", "cva", "classes"]
+}
