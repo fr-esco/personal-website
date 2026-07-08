@@ -23,18 +23,16 @@ import {
 } from './app-seo'
 import { getAlternateLocales, normalizeLocale } from './core/i18n-l10n.util'
 import { SeoService } from './seo.service'
+import { ThemeService } from './theme.service'
 
 @Component({
   imports: [RouterOutlet],
   selector: 'app-root',
   template: ` <router-outlet></router-outlet> `,
-  styles: [
-    `
-      :host {
-        display: block;
-      }
-    `,
-  ],
+  host: {
+    class:
+      'block h-full bg-zinc-50 text-zinc-900 dark:text-zinc-50 dark:bg-zinc-900',
+  },
 })
 export class App {
   private meta = inject(Meta)
@@ -43,6 +41,7 @@ export class App {
   private document = inject(DOCUMENT)
   private locale = inject(LOCALE_ID)
   private seoService = inject(SeoService)
+  private themeService = inject(ThemeService)
 
   constructor() {
     this.setSeo()
