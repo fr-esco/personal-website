@@ -1,3 +1,22 @@
-import { Route } from '@angular/router';
+import { Route } from '@angular/router'
 
-export const appRoutes: Route[] = [];
+import { BlogListComponent } from './blog/blog-list.component'
+import { BlogPostComponent } from './blog/blog-post.component'
+import { MainLayoutComponent } from './layout/main-layout.component'
+
+export const appRoutes: Route[] = [
+  {
+    path: '',
+    component: MainLayoutComponent,
+    children: [
+      {
+        path: 'blog',
+        component: BlogListComponent,
+      },
+      {
+        path: 'blog/:slug',
+        component: BlogPostComponent,
+      },
+    ],
+  },
+]

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="sitemap.xsl"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://francescocolamonici.it/it/</loc>
+    <lastmod>2026-07-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="it" href="https://francescocolamonici.it/it/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://francescocolamonici.it/en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://francescocolamonici.it/en/"/>
+  </url>
+  <url>
+    <loc>https://francescocolamonici.it/en/</loc>
+    <lastmod>2026-07-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="it" href="https://francescocolamonici.it/it/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://francescocolamonici.it/en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://francescocolamonici.it/en/"/>
+  </url>
+  <url>
+    <loc>https://francescocolamonici.it/it/blog/ciao-mondo</loc>
+    <lastmod>2026-02-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="it" href="https://francescocolamonici.it/it/blog/ciao-mondo"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://francescocolamonici.it/en/blog/hello-world"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://francescocolamonici.it/en/blog/hello-world"/>
+    <image:image>
+      <image:loc>https://francescocolamonici.it/assets/blog/ciao-mondo.jpg</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://francescocolamonici.it/en/blog/hello-world</loc>
+    <lastmod>2026-02-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="it" href="https://francescocolamonici.it/it/blog/ciao-mondo"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://francescocolamonici.it/en/blog/hello-world"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://francescocolamonici.it/en/blog/hello-world"/>
+    <image:image>
+      <image:loc>https://francescocolamonici.it/assets/blog/hello-world.jpg</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://francescocolamonici.it/it/blog/</loc>
+    <lastmod>2026-02-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="it" href="https://francescocolamonici.it/it/blog/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://francescocolamonici.it/en/blog/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://francescocolamonici.it/en/blog/"/>
+  </url>
+  <url>
+    <loc>https://francescocolamonici.it/en/blog/</loc>
+    <lastmod>2026-02-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="it" href="https://francescocolamonici.it/it/blog/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://francescocolamonici.it/en/blog/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://francescocolamonici.it/en/blog/"/>
+  </url>
+</urlset>

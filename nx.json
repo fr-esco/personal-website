@@ -6,10 +6,7 @@
     "applyChanges": true
   },
   "namedInputs": {
-    "default": [
-      "{projectRoot}/**/*",
-      "sharedGlobals"
-    ],
+    "default": ["{projectRoot}/**/*", "sharedGlobals"],
     "production": [
       "default",
       "!{projectRoot}/.eslintrc.json",
@@ -20,13 +17,8 @@
   "targetDefaults": {
     "@angular/build:application": {
       "cache": true,
-      "dependsOn": [
-        "^build"
-      ],
-      "inputs": [
-        "production",
-        "^production"
-      ]
+      "dependsOn": ["^build"],
+      "inputs": ["production", "^production"]
     },
     "@nx/eslint:lint": {
       "cache": true,
@@ -41,12 +33,18 @@
     },
     "@nx/angular:ng-packagr-lite": {
       "cache": true,
-      "dependsOn": [
-        "^build"
-      ],
+      "dependsOn": ["^build"],
+      "inputs": ["production", "^production"]
+    },
+    "blog:build": {
+      "cache": true,
       "inputs": [
-        "production",
-        "^production"
+        "{projectRoot}/src/content/**/*.md",
+        "{projectRoot}/scripts/generate-blog.ts"
+      ],
+      "outputs": [
+        "{projectRoot}/public/assets/blog/**/*",
+        "{projectRoot}/public/sitemap.xml"
       ]
     }
   },

@@ -1,0 +1,22 @@
+[
+  {
+    "slug": "hello-world",
+    "title": "Hello World",
+    "description": "A comprehensive example of a blog post with all possible front matter properties.",
+    "excerpt": "This is a quick summary of the post for lists and previews, optimized for AEO concise reading.",
+    "directAnswer": "A Hello World program is traditionally the first computer program written by a developer in a new language, serving as a simple sanity test.",
+    "date": "2026-02-11T00:00:00.000Z",
+    "image": "/assets/blog/hello-world.jpg",
+    "translationKey": "hello-world",
+    "author": "John Doe",
+    "authorUrl": "https://github.com/johndoe",
+    "authorUsername": "johndoe",
+    "category": "Updates",
+    "modified": "2026-02-11T10:30:00.000Z",
+    "keywords": [
+      "angular",
+      "seo",
+      "world-pulse"
+    ]
+  }
+]

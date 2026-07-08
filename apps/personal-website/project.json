@@ -17,10 +17,9 @@
     "build": {
       "executor": "@angular/build:application",
       "syncGenerators": ["@juristr/nx-tailwind-sync:source-directives"],
-      "outputs": [
-        "{options.outputPath}"
-      ],
+      "outputs": ["{options.outputPath}"],
       "defaultConfiguration": "production",
+      "dependsOn": ["blog:build"],
       "options": {
         "outputPath": "dist/apps/personal-website",
         "browser": "apps/personal-website/src/main.ts",
@@ -31,9 +30,7 @@
             "input": "apps/personal-website/public"
           }
         ],
-        "styles": [
-          "apps/personal-website/src/styles.css"
-        ],
+        "styles": ["apps/personal-website/src/styles.css"],
         "server": "apps/personal-website/src/main.server.ts",
         "ssr": {
           "entry": "apps/personal-website/src/server.ts"
@@ -56,13 +53,24 @@
               "maximumError": "8kb"
             }
           ],
+          "localize": true,
           "outputHashing": "all"
         },
         "development": {
           "optimization": false,
           "extractLicenses": false,
           "sourceMap": true
+        },
+        "i18n-it": {
+          "localize": ["it"]
         }
+      }
+    },
+    "blog:build": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "node scripts/generate-blog.ts",
+        "cwd": "apps/personal-website"
       }
     },
     "serve": {
@@ -76,7 +84,17 @@
         },
         "development": {
           "buildTarget": "personal-website:build:development"
+        },
+        "i18n-it": {
+          "buildTarget": "app-marketing:build:development,i18n-it"
         }
+      }
+    },
+    "blog:serve": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "nodemon --watch src/content -e md --exec npx nx run personal-website:blog:build",
+        "cwd": "apps/personal-website"
       }
     },
     "lint": {
@@ -88,7 +106,7 @@
       "options": {
         "buildTarget": "personal-website:build",
         "staticFilePath": "dist/apps/personal-website/browser",
-        "spa": true
+        "spa": false
       }
     },
     "extract-i18n": {

@@ -1,0 +1,22 @@
+[
+  {
+    "slug": "ciao-mondo",
+    "title": "Ciao Mondo",
+    "description": "Un esempio completo di un post del blog con tutte le possibili proprietà del front matter.",
+    "excerpt": "Questo è un breve riassunto del post per liste e anteprime, ottimizzato per la lettura AEO.",
+    "directAnswer": "Un programma Ciao Mondo è tradizionalmente il primo programma scritto da uno sviluppatore in un nuovo linguaggio, e serve come semplice test di funzionamento.",
+    "date": "2026-02-11T00:00:00.000Z",
+    "image": "/assets/blog/ciao-mondo.jpg",
+    "translationKey": "hello-world",
+    "author": "Mario Rossi",
+    "authorUrl": "https://github.com/mariorossi",
+    "authorUsername": "mariorossi",
+    "category": "Novità",
+    "modified": "2026-02-11T10:30:00.000Z",
+    "keywords": [
+      "angular",
+      "seo",
+      "world-pulse"
+    ]
+  }
+]

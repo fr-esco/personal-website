@@ -1,0 +1,41 @@
+<div
+  class="bg-background text-on-background min-h-screen transition-colors duration-300"
+>
+  <!-- Top Navigation -->
+  <header
+    class="bg-surface text-on-surface flex h-16 items-center justify-between border-b px-6"
+  >
+    <div class="flex items-center gap-3">
+      <div
+        class="bg-primary shadow-primary/20 flex h-8 w-8 items-center justify-center rounded-lg shadow-lg"
+      >
+        <svg
+          class="h-5 w-5 text-white"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M13 10V3L4 14h7v7l9-11h-7z"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+          />
+        </svg>
+      </div>
+      <h1 class="text-xl font-bold tracking-tight">
+        Loreflow<span class="text-primary">.ai</span>
+      </h1>
+    </div>
+    <a
+      i18n
+      routerLink="/blog"
+      >Blog</a
+    >
+  </header>
+
+  <div class="flex-1">
+    <!-- Main Router Outlet -->
+    <router-outlet></router-outlet>
+  </div>
+</div>
