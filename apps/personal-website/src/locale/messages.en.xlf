@@ -48,28 +48,28 @@
         <source>Blog | <x id="PH" equiv-text="APP_TITLE"/></source>
         <context-group purpose="location">
           <context context-type="sourcefile">apps/personal-website/src/app/blog/blog-list.component.ts</context>
-          <context context-type="linenumber">216</context>
+          <context context-type="linenumber">218</context>
         </context-group>
       </trans-unit>
       <trans-unit id="2387308983936782421" datatype="html">
         <source>Read our latest blog posts</source>
         <context-group purpose="location">
           <context context-type="sourcefile">apps/personal-website/src/app/blog/blog-list.component.ts</context>
-          <context context-type="linenumber">217</context>
+          <context context-type="linenumber">219</context>
         </context-group>
       </trans-unit>
       <trans-unit id="678519015808755706" datatype="html">
         <source>Back to articles</source>
         <context-group purpose="location">
           <context context-type="sourcefile">apps/personal-website/src/app/blog/blog-post.component.ts</context>
-          <context context-type="linenumber">42,43</context>
+          <context context-type="linenumber">43,44</context>
         </context-group>
       </trans-unit>
       <trans-unit id="8024746295770312257" datatype="html">
         <source> Discover More </source>
         <context-group purpose="location">
           <context context-type="sourcefile">apps/personal-website/src/app/blog/blog-post.component.ts</context>
-          <context context-type="linenumber">63</context>
+          <context context-type="linenumber">64</context>
         </context-group>
       </trans-unit>
       <trans-unit id="1509582790882652936" datatype="html">

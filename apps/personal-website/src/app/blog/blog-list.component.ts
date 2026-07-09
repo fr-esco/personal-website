@@ -1,5 +1,5 @@
 import { DatePipe } from '@angular/common'
-import { Component, computed, inject, LOCALE_ID } from '@angular/core'
+import { Component, computed, effect, inject, LOCALE_ID } from '@angular/core'
 import { toSignal } from '@angular/core/rxjs-interop'
 import { Meta, Title } from '@angular/platform-browser'
 import { ActivatedRoute, Params, RouterLink } from '@angular/router'
@@ -209,7 +209,9 @@ export class BlogListComponent {
   })
 
   constructor() {
-    this.setSeo()
+    effect(() => {
+      this.setSeo()
+    })
   }
 
   private setSeo() {
@@ -228,12 +230,23 @@ export class BlogListComponent {
     this.meta.updateTag({ name: 'twitter:title', content: title })
     this.meta.updateTag({ name: 'twitter:description', content: description })
 
+    const blogPosts = this.filteredPosts().map((post) => ({
+      '@type': 'BlogPosting',
+      headline: post.title,
+      description: post.description,
+      url: `${APP_URL}/${this.locale}/blog/${post.slug}`,
+      datePublished: post.date,
+      image: post.image ? `${APP_URL}${post.image}` : APP_LOGO,
+      inLanguage: this.locale,
+    }))
+
     const schema = {
       '@context': 'https://schema.org',
       '@type': 'Blog',
       name: title,
       description,
       url,
+      inLanguage: this.locale,
       publisher: {
         '@type': 'Organization',
         name: APP_SITE_NAME,
@@ -242,6 +255,7 @@ export class BlogListComponent {
           url: APP_LOGO,
         },
       },
+      blogPost: blogPosts,
     }
     this.seoService.setStructuredData(schema)
   }

@@ -1,5 +1,12 @@
 import { DOCUMENT } from '@angular/common'
-import { Component, inject, LOCALE_ID, OnInit, signal } from '@angular/core'
+import {
+  Component,
+  inject,
+  LOCALE_ID,
+  OnInit,
+  signal,
+  ViewEncapsulation,
+} from '@angular/core'
 import { Meta, Title } from '@angular/platform-browser'
 import { ActivatedRoute, RouterLink } from '@angular/router'
 import { HlmBadge } from '@spartan-ng/helm/badge'
@@ -19,12 +26,15 @@ import { BlogPost, BlogService } from './blog.service'
   selector: 'app-blog-post',
   standalone: true,
   imports: [RouterLink, HlmBadge],
+  encapsulation: ViewEncapsulation.None,
   template: `
-    <article class="prose lg:prose-xl dark:prose-invert mx-auto px-6 py-12 md:py-20">
+    <article
+      class="prose lg:prose-xl dark:prose-invert mx-auto px-6 py-12 md:py-20"
+    >
       <!-- Back Link -->
       <div class="mb-8 flex items-center print:hidden">
         <a
-          class="text-muted-foreground hover:text-primary flex items-center gap-2 text-sm font-semibold transition-colors no-underline"
+          class="text-muted-foreground hover:text-primary flex items-center gap-2 text-sm font-semibold no-underline transition-colors"
           [routerLink]="['/blog']"
         >
           <svg
@@ -36,7 +46,12 @@ import { BlogPost, BlogService } from './blog.service'
             stroke-width="2"
             viewBox="0 0 24 24"
           >
-            <line x1="19" x2="5" y1="12" y2="12" />
+            <line
+              x1="19"
+              x2="5"
+              y1="12"
+              y2="12"
+            />
             <polyline points="12 19 5 12 12 5" />
           </svg>
           <span i18n>Back to articles</span>
@@ -67,9 +82,9 @@ import { BlogPost, BlogService } from './blog.service'
           <div class="flex flex-wrap gap-3">
             @for (tag of post()?.keywords; track tag) {
               <a
+                class="hover:bg-primary hover:text-primary-foreground border-border text-muted-foreground bg-muted cursor-pointer text-[10px] font-medium tracking-wider uppercase no-underline transition-colors"
                 hlmBadge
                 variant="outline"
-                class="hover:bg-primary hover:text-primary-foreground border-border text-muted-foreground bg-muted text-[10px] font-medium tracking-wider uppercase no-underline cursor-pointer transition-colors"
                 [queryParams]="{ tag: tag }"
                 [routerLink]="['/blog']"
               >
@@ -80,8 +95,11 @@ import { BlogPost, BlogService } from './blog.service'
         </footer>
       }
     </article>
+  `,
+  styles: [
+    `
+      @reference "tailwindcss";
 
-    <style>
       .content-fade-in {
         animation: fadeIn 0.8s ease-out;
       }
@@ -95,8 +113,69 @@ import { BlogPost, BlogService } from './blog.service'
           transform: translateY(0);
         }
       }
-    </style>
-  `,
+      h1 {
+        @apply text-4xl;
+      }
+      h2 {
+        @apply text-3xl;
+      }
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        color: var(--foreground);
+        font-weight: 700;
+        letter-spacing: -0.025em;
+      }
+      .prose p {
+        color: var(--muted-foreground);
+        line-height: 1.625;
+      }
+      .prose a {
+        color: var(--primary);
+        text-decoration: none;
+      }
+      .prose a:hover {
+        text-decoration: underline;
+      }
+      .prose strong {
+        color: var(--foreground);
+        font-weight: 700;
+      }
+      .prose blockquote {
+        border-left: 4px solid var(--primary);
+        padding-left: 1rem;
+        font-style: italic;
+        color: var(--muted-foreground);
+        margin: 1.5rem 0;
+      }
+      .prose ul {
+        list-style-type: disc;
+        list-style-position: inside;
+        margin-bottom: 1.5rem;
+        color: var(--muted-foreground);
+      }
+      .prose ol {
+        list-style-type: decimal;
+        list-style-position: inside;
+        margin-bottom: 1.5rem;
+        color: var(--muted-foreground);
+      }
+      .prose li {
+        color: var(--muted-foreground);
+        margin-bottom: 0.5rem;
+      }
+      .prose code {
+        background-color: var(--muted);
+        color: var(--muted-foreground);
+        padding: 0.125rem 0.375rem;
+        border-radius: 0.25rem;
+        font-size: 0.875rem;
+      }
+    `,
+  ],
 })
 export class BlogPostComponent implements OnInit {
   private blogService = inject(BlogService)
@@ -225,6 +304,7 @@ export class BlogPostComponent implements OnInit {
           image: [post.image || APP_IMAGE],
           datePublished: post.date,
           dateModified: post.modified || post.date,
+          inLanguage: this.locale,
           author: [
             {
               '@type': 'Person',
