@@ -10,8 +10,9 @@
 /* You can add global styles to this file, and also import other style files */
 
 /* nx-tailwind-sources:start */
+@source "../../../libs/ui/badge";
 @source "../../../libs/ui/button";
-@source "../../../libs/ui/sonner";
+@source "../../../libs/ui/card";
 @source "../../../libs/ui/utils";
 /* nx-tailwind-sources:end */
 
@@ -30,8 +31,20 @@
   --card-foreground: oklch(0.141 0.005 285.823);
   --popover: oklch(1 0 0);
   --popover-foreground: oklch(0.141 0.005 285.823);
-  --primary: oklch(0.21 0.006 285.885);
+  /* Active Theme: Emerald
+  --primary: oklch(0.627 0.265 149.213);
   --primary-foreground: oklch(0.985 0 0);
+ */
+
+  /* Alternative: Steel Blue (Uncomment to use)
+  --primary: oklch(0.61 0.16 233.0);
+  --primary-foreground: oklch(0.985 0 0);
+  */
+
+  /* Alternative: Ruby Red (Uncomment to use) */
+  --primary: oklch(0.6 0.25 25);
+  --primary-foreground: oklch(0.985 0 0);
+
   --secondary: oklch(0.967 0.001 286.375);
   --secondary-foreground: oklch(0.21 0.006 285.885);
   --muted: oklch(0.967 0.001 286.375);
@@ -61,8 +74,20 @@
   --card-foreground: oklch(0.985 0 0);
   --popover: oklch(0.21 0.006 285.885);
   --popover-foreground: oklch(0.985 0 0);
-  --primary: oklch(0.92 0.004 286.32);
+  /* Active Theme: Emerald 
+  --primary: oklch(0.627 0.265 149.213);
   --primary-foreground: oklch(0.21 0.006 285.885);
+*/
+
+  /* Alternative: Steel Blue (Uncomment to use)
+  --primary: oklch(0.61 0.16 233.0);
+  --primary-foreground: oklch(0.21 0.006 285.885);
+  */
+
+  /* Alternative: Ruby Red (Uncomment to use) */
+  --primary: oklch(0.6 0.25 25);
+  --primary-foreground: oklch(0.21 0.006 285.885);
+
   --secondary: oklch(0.274 0.006 286.033);
   --secondary-foreground: oklch(0.985 0 0);
   --muted: oklch(0.274 0.006 286.033);
@@ -139,4 +164,115 @@
   app-root {
     isolation: isolate;
   }
+}
+
+/* ----------------------------------------------------
+   RECRUITER PRINT SUPPORT (Ctrl+P / Cmd+P)
+   ---------------------------------------------------- */
+@media print {
+  @page {
+    size: A4 portrait;
+    margin: 1.2cm 1.5cm;
+  }
+  .print-hidden {
+    display: none !important;
+  }
+  .print-visible {
+    display: block !important;
+  }
+  body {
+    font-size: 9.5pt;
+    line-height: 1.4;
+    background-color: white !important;
+    color: black !important;
+  }
+  /* Force clean black text and background transparency for physical prints */
+  *,
+  :after,
+  :before {
+    background: transparent !important;
+    color: black !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+  /* Highlight links on paper by appending URLs */
+  a:after {
+    content: ' (' attr(href) ')';
+    font-size: 7.5pt;
+    color: #444444 !important;
+  }
+  /* Avoid printing link content for non-print or action-oriented anchors */
+  a[href^='#']:after,
+  a[href^='javascript:']:after,
+  .no-print-href:after,
+  a.no-print-href:after {
+    content: '' !important;
+  }
+  /* Optimize layouts to avoid page breaks inside cards/sections */
+  section,
+  blockquote,
+  [hlmCard],
+  li {
+    page-break-inside: avoid;
+  }
+  /* Reset layout gaps for print */
+  .grid {
+    display: block !important;
+    gap: 0 !important;
+  }
+  /* Reset Spartan Cards layout for print to be a clean, compact resume list */
+  [hlmCard] {
+    border: none !important;
+    box-shadow: none !important;
+    background: transparent !important;
+    padding: 0 !important;
+    margin-bottom: 0.75rem !important;
+    gap: 0.15rem !important;
+    display: block !important;
+  }
+  [hlmCard] h4 {
+    font-size: 10pt !important;
+    font-weight: bold !important;
+    color: black !important;
+    margin-bottom: 0.15rem !important;
+  }
+  [hlmCard] p {
+    font-size: 9pt !important;
+    color: #333333 !important;
+    line-height: 1.35 !important;
+  }
+  /* Compact lists and margins */
+  ul {
+    margin-top: 0.25rem !important;
+    margin-bottom: 0.25rem !important;
+  }
+  /* Ensure qualifications grid displays as 2 columns on paper */
+  .print\:grid-cols-2 {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr !important;
+    gap: 1.5rem !important;
+  }
+}
+
+/* ----------------------------------------------------
+   EMAIL OBFUSCATION UTILITIES
+   ---------------------------------------------------- */
+.profile-email-address {
+  unicode-bidi: bidi-override;
+  direction: rtl;
+}
+.profile-email-address::after {
+  content: attr(data-user) '';
+  /* white-space: pre; */
+}
+.profile-email-address::before {
+  content: attr(data-domain) '\0040';
+}
+.profile-email-address-extra {
+  display: none;
+}
+
+/* Color company links in primary theme color on screen */
+a[href='https://byebyeq.com'] {
+  color: var(--primary);
 }

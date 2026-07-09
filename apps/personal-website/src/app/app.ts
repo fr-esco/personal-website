@@ -53,7 +53,40 @@ export class App {
       .pipe(filter(event => event instanceof NavigationEnd))
       .subscribe(() => {
         this.updateCanonical()
+        this.updateAlternateLinks()
       })
+  }
+
+  private updateAlternateLinks() {
+    const head = this.document.head
+    const existingAlternates = head.querySelectorAll(
+      "link[rel='alternate'][hreflang]"
+    )
+    existingAlternates.forEach(el => el.remove())
+
+    const path = this.router.url.split('?')[0]
+    const baseUrl = APP_URL.replace(/\/$/, '')
+
+    // Add IT translation alternate link
+    const linkIt = this.document.createElement('link')
+    linkIt.rel = 'alternate'
+    linkIt.hreflang = 'it'
+    linkIt.href = `${baseUrl}/it${path}`
+    head.appendChild(linkIt)
+
+    // Add EN translation alternate link
+    const linkEn = this.document.createElement('link')
+    linkEn.rel = 'alternate'
+    linkEn.hreflang = 'en'
+    linkEn.href = `${baseUrl}/en${path}`
+    head.appendChild(linkEn)
+
+    // Add x-default (defaults to English)
+    const linkDefault = this.document.createElement('link')
+    linkDefault.rel = 'alternate'
+    linkDefault.hreflang = 'x-default'
+    linkDefault.href = `${baseUrl}/en${path}`
+    head.appendChild(linkDefault)
   }
 
   private updateCanonical() {

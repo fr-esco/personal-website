@@ -1,10 +1,13 @@
-import { Component } from '@angular/core'
+import { AsyncPipe } from '@angular/common'
+import { Component, inject } from '@angular/core'
 import { RouterLink, RouterOutlet } from '@angular/router'
 
+import { ThemeService } from '../theme.service'
+
 @Component({
+  imports: [RouterOutlet, RouterLink, AsyncPipe],
   selector: 'app-main-layout',
   standalone: true,
-  imports: [RouterOutlet, RouterLink],
   templateUrl: './main-layout.component.html',
   styles: [
     `
@@ -14,4 +17,6 @@ import { RouterLink, RouterOutlet } from '@angular/router'
     `,
   ],
 })
-export class MainLayoutComponent {}
+export class MainLayoutComponent {
+  public themeService = inject(ThemeService)
+}

@@ -1,41 +1,96 @@
 <div
-  class="bg-background text-on-background min-h-screen transition-colors duration-300"
+  class="bg-background text-on-background min-h-screen transition-colors duration-300 flex flex-col"
 >
-  <!-- Top Navigation -->
+  <!-- Top Navigation (hidden when printing) -->
   <header
-    class="bg-surface text-on-surface flex h-16 items-center justify-between border-b px-6"
+    class="bg-surface text-on-surface flex h-16 items-center justify-between border-b px-6 print-hidden"
   >
     <div class="flex items-center gap-3">
-      <div
-        class="bg-primary shadow-primary/20 flex h-8 w-8 items-center justify-center rounded-lg shadow-lg"
+      <a
+        class="flex items-center gap-3 hover:opacity-85 transition-opacity"
+        routerLink="/"
       >
-        <svg
-          class="h-5 w-5 text-white"
-          fill="none"
-          stroke="currentColor"
-          viewBox="0 0 24 24"
+        <div
+          class="bg-primary flex h-8 w-8 items-center justify-center rounded-lg shadow-sm"
         >
-          <path
-            d="M13 10V3L4 14h7v7l9-11h-7z"
+          <!-- Stylized Monogram F -->
+          <span class="text-white font-bold text-sm select-none">FC</span>
+        </div>
+        <h1 class="text-lg font-bold tracking-tight">
+          Francesco Colamonici<span class="text-primary font-medium">.it</span>
+        </h1>
+      </a>
+    </div>
+
+    <div class="flex items-center gap-6">
+      <a
+        class="text-sm font-medium hover:text-primary transition-colors"
+        i18n
+        routerLink="/blog"
+      >
+        Blog
+      </a>
+
+      <a
+        class="text-sm font-medium bg-primary text-primary-foreground px-3 py-1.5 rounded-md hover:opacity-90 transition-opacity"
+        href="https://cal.com/francescocolamonici"
+        rel="noopener noreferrer"
+        target="_blank"
+        i18n
+      >
+        Book Call
+      </a>
+
+      <!-- Dark Mode Switcher -->
+      <button
+        (click)="themeService.toggleDarkMode()"
+        aria-label="Toggle Dark Mode"
+        class="text-on-surface-variant hover:text-primary rounded-full p-2 transition-colors border border-border flex items-center justify-center cursor-pointer"
+      >
+        @if ((themeService.theme$ | async) === 'dark') {
+          <!-- Sun icon -->
+          <svg
+            class="h-4 w-4"
+            fill="none"
+            stroke="currentColor"
             stroke-linecap="round"
             stroke-linejoin="round"
             stroke-width="2"
-          />
-        </svg>
-      </div>
-      <h1 class="text-xl font-bold tracking-tight">
-        Loreflow<span class="text-primary">.ai</span>
-      </h1>
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <circle cx="12" cy="12" r="4" />
+            <path d="M12 2v2" />
+            <path d="M12 20v2" />
+            <path d="M4.93 4.93l1.41 1.41" />
+            <path d="M17.66 17.66l1.41 1.41" />
+            <path d="M2 12h2" />
+            <path d="M20 12h2" />
+            <path d="M6.34 17.66l-1.41 1.41" />
+            <path d="M19.07 4.93l-1.41 1.41" />
+          </svg>
+        } @else {
+          <!-- Moon icon -->
+          <svg
+            class="h-4 w-4"
+            fill="none"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z" />
+          </svg>
+        }
+      </button>
     </div>
-    <a
-      i18n
-      routerLink="/blog"
-      >Blog</a
-    >
   </header>
 
-  <div class="flex-1">
+  <div class="flex-1 flex flex-col">
     <!-- Main Router Outlet -->
     <router-outlet></router-outlet>
   </div>
 </div>
+
