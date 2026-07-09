@@ -4,7 +4,13 @@ import { HlmBadge } from '@spartan-ng/helm/badge'
 import { HlmButton } from '@spartan-ng/helm/button'
 import { HlmCardImports } from '@spartan-ng/helm/card'
 
-import { APP_DESCRIPTION, APP_TITLE } from './app-seo'
+import {
+  APP_DESCRIPTION,
+  APP_IMAGE,
+  APP_LOGO,
+  APP_TITLE,
+  APP_URL,
+} from './app-seo'
 import { SeoService } from './seo.service'
 
 @Component({
@@ -212,13 +218,13 @@ import { SeoService } from './seo.service'
         class="mb-20 flex flex-col items-center justify-between gap-12 sm:flex-row md:items-start print:mb-8"
       >
         <div class="order-2 flex-1 md:order-1">
-          <h2
+          <h1
             class="text-foreground mb-6 text-4xl font-bold tracking-tight md:text-6xl print:hidden"
             i18n
           >
             Fractional Technical Architect & System Design for Startups &
             Scaleups
-          </h2>
+          </h1>
           <p
             class="text-muted-foreground mb-8 max-w-3xl text-lg leading-relaxed md:text-xl print:mb-2 print:text-xs print:leading-relaxed"
             i18n
@@ -272,12 +278,12 @@ import { SeoService } from './seo.service'
 
       <!-- The Three B2B Services (Pillars using hlm-card) -->
       <section class="mb-24 print:mb-8">
-        <h3
+        <h2
           class="border-border mb-10 border-b pb-2 text-2xl font-bold print:mb-4 print:pb-1 print:text-base"
           i18n
         >
           Core Architecture Pillars
-        </h3>
+        </h2>
         <div
           class="grid grid-cols-1 gap-8 md:grid-cols-3 print:grid-cols-3 print:gap-4"
         >
@@ -372,8 +378,8 @@ import { SeoService } from './seo.service'
               hlmCardContent
               i18n
             >
-              Infrastructure analysis across Google Cloud, Firebase, or Azure to
-              cut compute waste, reduce hosting costs, and optimize CI/CD
+              Infrastructure analysis across Google Cloud (GCP), AWS, or Azure
+              to cut compute waste, reduce hosting costs, and optimize CI/CD
               pipeline speed.
             </p>
           </div>
@@ -425,12 +431,12 @@ import { SeoService } from './seo.service'
 
       <!-- Selected Case Studies (Hidden on print to preserve the 1-page PDF layout) -->
       <section class="mb-24 print:hidden">
-        <h3
+        <h2
           class="border-border mb-10 border-b pb-2 text-2xl font-bold"
           i18n
         >
           Selected Case Studies & Impact
-        </h3>
+        </h2>
         <div class="grid grid-cols-1 gap-8 md:grid-cols-2">
           <!-- Case 1 -->
           <div
@@ -448,7 +454,7 @@ import { SeoService } from './seo.service'
                 hlmCardTitle
                 i18n
               >
-                Walgreens boots alliance sales platform
+                Walgreens Boots Alliance Inventory Management System
               </h4>
               <p
                 class="text-muted-foreground text-sm leading-relaxed"
@@ -674,12 +680,12 @@ import { SeoService } from './seo.service'
 
       <!-- Pricing Packages Section (Hidden completely when printing as it is action-oriented) -->
       <section class="mb-24 print:hidden">
-        <h3
+        <h2
           class="mb-3 text-2xl font-bold"
           i18n
         >
           Consulting Packages
-        </h3>
+        </h2>
         <p
           class="text-muted-foreground mb-10"
           i18n
@@ -732,7 +738,9 @@ import { SeoService } from './seo.service'
                   >
                     <polyline points="20 6 9 17 4 12" />
                   </svg>
-                  <span i18n>GCP/Firebase Cost Audit</span>
+                  <span i18n
+                    >Cloud Cost Optimization Audit (GCP, Azure, AWS)</span
+                  >
                 </li>
                 <li class="flex items-center gap-2">
                   <svg
@@ -744,7 +752,7 @@ import { SeoService } from './seo.service'
                   >
                     <polyline points="20 6 9 17 4 12" />
                   </svg>
-                  <span i18n>Database & query speed analysis</span>
+                  <span i18n>Database Performance & Query Optimization</span>
                 </li>
                 <li class="flex items-center gap-2">
                   <svg
@@ -756,7 +764,7 @@ import { SeoService } from './seo.service'
                   >
                     <polyline points="20 6 9 17 4 12" />
                   </svg>
-                  <span i18n>Multi-tenant data isolation check</span>
+                  <span i18n>Architecture & Data Security Review</span>
                 </li>
                 <li class="flex items-center gap-2">
                   <svg
@@ -768,7 +776,7 @@ import { SeoService } from './seo.service'
                   >
                     <polyline points="20 6 9 17 4 12" />
                   </svg>
-                  <span i18n>DevX & CI/CD bottleneck evaluation</span>
+                  <span i18n>Developer Experience & CI/CD Pipeline Audit</span>
                 </li>
                 <li class="flex items-center gap-2">
                   <svg
@@ -780,7 +788,9 @@ import { SeoService } from './seo.service'
                   >
                     <polyline points="20 6 9 17 4 12" />
                   </svg>
-                  <span i18n>Comprehensive report & 1h review</span>
+                  <span i18n
+                    >Actionable PDF Roadmap & 90-min Handoff Workshop</span
+                  >
                 </li>
               </ul>
             </div>
@@ -826,12 +836,16 @@ import { SeoService } from './seo.service'
               <div class="text-foreground mb-6 text-3xl font-extrabold">
                 @if (locale === 'it') {
                   €1.000
-                  <span class="text-muted-foreground text-xs font-normal"
+                  <span
+                    class="text-muted-foreground text-xs font-normal"
+                    i18n
                     >+ IVA / week</span
                   >
                 } @else {
                   $1,500
-                  <span class="text-muted-foreground text-xs font-normal"
+                  <span
+                    class="text-muted-foreground text-xs font-normal"
+                    i18n
                     >/ week</span
                   >
                 }
@@ -850,7 +864,7 @@ import { SeoService } from './seo.service'
                   >
                     <polyline points="20 6 9 17 4 12" />
                   </svg>
-                  <span i18n>7 Days Async Slack Access</span>
+                  <span i18n>7-Day Priority Async Slack Advisory</span>
                 </li>
                 <li class="flex items-center gap-2">
                   <svg
@@ -862,7 +876,7 @@ import { SeoService } from './seo.service'
                   >
                     <polyline points="20 6 9 17 4 12" />
                   </svg>
-                  <span i18n>System Design RFC/PR reviews</span>
+                  <span i18n>Architecture proposals & RFC reviews</span>
                 </li>
                 <li class="flex items-center gap-2">
                   <svg
@@ -874,7 +888,9 @@ import { SeoService } from './seo.service'
                   >
                     <polyline points="20 6 9 17 4 12" />
                   </svg>
-                  <span i18n>CI/CD & environment bootstrapping</span>
+                  <span i18n
+                    >Hands-on Proof of Concept / Boilerplate coding</span
+                  >
                 </li>
                 <li class="flex items-center gap-2">
                   <svg
@@ -886,7 +902,7 @@ import { SeoService } from './seo.service'
                   >
                     <polyline points="20 6 9 17 4 12" />
                   </svg>
-                  <span i18n>Up to 4 hours of focused deep work</span>
+                  <span i18n>Critical infrastructure setup (CI/CD, IaC)</span>
                 </li>
                 <li class="flex items-center gap-2">
                   <svg
@@ -898,7 +914,7 @@ import { SeoService } from './seo.service'
                   >
                     <polyline points="20 6 9 17 4 12" />
                   </svg>
-                  <span i18n>1x 1h Live Design Alignment session</span>
+                  <span i18n>1x Live Design Workshop & alignment session</span>
                 </li>
               </ul>
             </div>
@@ -938,12 +954,16 @@ import { SeoService } from './seo.service'
               <div class="text-foreground mb-6 text-3xl font-extrabold">
                 @if (locale === 'it') {
                   €3.000
-                  <span class="text-muted-foreground text-xs font-normal"
+                  <span
+                    class="text-muted-foreground text-xs font-normal"
+                    i18n
                     >+ IVA / month</span
                   >
                 } @else {
                   $4,500
-                  <span class="text-muted-foreground text-xs font-normal"
+                  <span
+                    class="text-muted-foreground text-xs font-normal"
+                    i18n
                     >/ month</span
                   >
                 }
@@ -962,7 +982,9 @@ import { SeoService } from './seo.service'
                   >
                     <polyline points="20 6 9 17 4 12" />
                   </svg>
-                  <span i18n>Full Monthly Slack/PR Integration</span>
+                  <span i18n
+                    >Continuous Slack & PR Integration for the dev team</span
+                  >
                 </li>
                 <li class="flex items-center gap-2">
                   <svg
@@ -974,7 +996,7 @@ import { SeoService } from './seo.service'
                   >
                     <polyline points="20 6 9 17 4 12" />
                   </svg>
-                  <span i18n>Weekly 1h Live Alignment calls</span>
+                  <span i18n>Weekly Live Design & Alignment Syncs</span>
                 </li>
                 <li class="flex items-center gap-2">
                   <svg
@@ -986,7 +1008,7 @@ import { SeoService } from './seo.service'
                   >
                     <polyline points="20 6 9 17 4 12" />
                   </svg>
-                  <span i18n>Web3, dApps & Multi-Cloud advisory</span>
+                  <span i18n>Strategic Cloud & Architecture Roadmapping</span>
                 </li>
                 <li class="flex items-center gap-2">
                   <svg
@@ -998,7 +1020,9 @@ import { SeoService } from './seo.service'
                   >
                     <polyline points="20 6 9 17 4 12" />
                   </svg>
-                  <span i18n>Up to 10 hours of monthly deep work</span>
+                  <span i18n
+                    >Unlimited RFC, Database & System Design reviews</span
+                  >
                 </li>
                 <li class="flex items-center gap-2">
                   <svg
@@ -1010,7 +1034,9 @@ import { SeoService } from './seo.service'
                   >
                     <polyline points="20 6 9 17 4 12" />
                   </svg>
-                  <span i18n>Strategic system design mentoring</span>
+                  <span i18n
+                    >Engineering Team Mentoring & Tech Leadership Coaching</span
+                  >
                 </li>
               </ul>
             </div>
@@ -1031,12 +1057,12 @@ import { SeoService } from './seo.service'
 
       <!-- Technical Ecosystem Section (Hidden on print) -->
       <section class="mb-24 print:hidden">
-        <h3
+        <h2
           class="border-border mb-6 border-b pb-2 text-2xl font-bold"
           i18n
         >
           Technical Ecosystem & Capabilities
-        </h3>
+        </h2>
         <div class="grid grid-cols-2 gap-6 text-sm md:grid-cols-4">
           <div class="space-y-2">
             <h4
@@ -1155,12 +1181,12 @@ import { SeoService } from './seo.service'
       >
         <!-- Highlights -->
         <div>
-          <h3
+          <h2
             class="border-border mb-6 border-b pb-2 text-2xl font-bold print:mb-4 print:pb-1 print:text-base"
             i18n
           >
             Key Highlights
-          </h3>
+          </h2>
           <ul class="space-y-4 print:space-y-1">
             <li class="flex items-start gap-3">
               <span
@@ -1268,12 +1294,12 @@ import { SeoService } from './seo.service'
 
         <!-- Personal & Social Info -->
         <div>
-          <h3
+          <h2
             class="border-border mb-6 border-b pb-2 text-2xl font-bold print:mb-4 print:pb-1 print:text-base"
             i18n
           >
             Qualifications & Profiles
-          </h3>
+          </h2>
           <div
             class="grid grid-cols-1 gap-6 text-sm sm:grid-cols-2 print:grid-cols-1 print:gap-2 print:space-y-0"
           >
@@ -1419,6 +1445,227 @@ import { SeoService } from './seo.service'
         </div>
       </section>
 
+      <!-- FAQ Section (Hidden when printing) -->
+      <section class="border-border mb-24 border-t pt-16 print:hidden">
+        <header class="mb-12 text-center">
+          <h2
+            class="text-foreground text-3xl font-bold tracking-tight md:text-4xl"
+            i18n
+          >
+            Frequently Asked Questions
+          </h2>
+          <p
+            class="text-muted-foreground mx-auto mt-4 max-w-2xl text-base"
+            i18n
+          >
+            Got questions about fractional services, technical advisory, or
+            engagement models? Find answers below.
+          </p>
+        </header>
+
+        <div class="mx-auto max-w-3xl space-y-4">
+          <!-- FAQ 0 -->
+          <div
+            class="border-border bg-card rounded-xl border p-6 transition-all duration-300"
+          >
+            <button
+              aria-controls="faq-answer-0"
+              class="text-foreground focus-visible:ring-primary flex w-full cursor-pointer items-center justify-between gap-4 text-left font-semibold outline-none select-none focus:outline-none focus-visible:ring-2"
+              [attr.aria-expanded]="openFaqs()[0] || false"
+              (click)="toggleFaq(0)"
+            >
+              <span i18n>What is a Fractional Technical Architect?</span>
+              <span
+                class="text-muted-foreground transition-transform duration-300"
+                [class.rotate-180]="openFaqs()[0]"
+              >
+                <svg
+                  class="h-5 w-5"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                >
+                  <polyline points="6 9 12 15 18 9" />
+                </svg>
+              </span>
+            </button>
+            <div
+              class="grid opacity-0 transition-all duration-300"
+              id="faq-answer-0"
+              role="region"
+              [class.grid-rows-[0fr]]="!openFaqs()[0]"
+              [class.grid-rows-[1fr]]="openFaqs()[0]"
+              [class.mt-4]="openFaqs()[0]"
+              [class.opacity-100]="openFaqs()[0]"
+            >
+              <div class="overflow-hidden">
+                <p
+                  class="text-muted-foreground text-sm leading-relaxed"
+                  i18n
+                >
+                  A Fractional Technical Architect provides senior-level
+                  software architecture, system design, and technology roadmap
+                  leadership on a part-time or project basis. This allows
+                  high-growth startups and scaleups to benefit from
+                  enterprise-grade technical guidance without the overhead of a
+                  full-time executive hire.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ 1 -->
+          <div
+            class="border-border bg-card rounded-xl border p-6 transition-all duration-300"
+          >
+            <button
+              aria-controls="faq-answer-1"
+              class="text-foreground focus-visible:ring-primary flex w-full cursor-pointer items-center justify-between gap-4 text-left font-semibold outline-none select-none focus:outline-none focus-visible:ring-2"
+              [attr.aria-expanded]="openFaqs()[1] || false"
+              (click)="toggleFaq(1)"
+            >
+              <span i18n>How does a fractional engagement work?</span>
+              <span
+                class="text-muted-foreground transition-transform duration-300"
+                [class.rotate-180]="openFaqs()[1]"
+              >
+                <svg
+                  class="h-5 w-5"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                >
+                  <polyline points="6 9 12 15 18 9" />
+                </svg>
+              </span>
+            </button>
+            <div
+              class="grid opacity-0 transition-all duration-300"
+              id="faq-answer-1"
+              role="region"
+              [class.grid-rows-[0fr]]="!openFaqs()[1]"
+              [class.grid-rows-[1fr]]="openFaqs()[1]"
+              [class.mt-4]="openFaqs()[1]"
+              [class.opacity-100]="openFaqs()[1]"
+            >
+              <div class="overflow-hidden">
+                <p
+                  class="text-muted-foreground text-sm leading-relaxed"
+                  i18n
+                >
+                  Engagements are flexible and tailored to your company's phase.
+                  Typical formats include weekly advisory retainers, deep-dive
+                  system design audits, cloud migration roadmap design, or
+                  helping you build, scale, and mentor your internal engineering
+                  team.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ 2 -->
+          <div
+            class="border-border bg-card rounded-xl border p-6 transition-all duration-300"
+          >
+            <button
+              aria-controls="faq-answer-2"
+              class="text-foreground focus-visible:ring-primary flex w-full cursor-pointer items-center justify-between gap-4 text-left font-semibold outline-none select-none focus:outline-none focus-visible:ring-2"
+              [attr.aria-expanded]="openFaqs()[2] || false"
+              (click)="toggleFaq(2)"
+            >
+              <span i18n>What technology stacks do you specialize in?</span>
+              <span
+                class="text-muted-foreground transition-transform duration-300"
+                [class.rotate-180]="openFaqs()[2]"
+              >
+                <svg
+                  class="h-5 w-5"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                >
+                  <polyline points="6 9 12 15 18 9" />
+                </svg>
+              </span>
+            </button>
+            <div
+              class="grid opacity-0 transition-all duration-300"
+              id="faq-answer-2"
+              role="region"
+              [class.grid-rows-[0fr]]="!openFaqs()[2]"
+              [class.grid-rows-[1fr]]="openFaqs()[2]"
+              [class.mt-4]="openFaqs()[2]"
+              [class.opacity-100]="openFaqs()[2]"
+            >
+              <div class="overflow-hidden">
+                <p
+                  class="text-muted-foreground text-sm leading-relaxed"
+                  i18n
+                >
+                  I specialize in designing scalable systems using
+                  TypeScript/Node.js (NestJS), Angular and React. On the cloud
+                  and infrastructure side, I have extensive production
+                  experience with GCP, Azure, AWS, Docker, and Terraform.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ 3 -->
+          <div
+            class="border-border bg-card rounded-xl border p-6 transition-all duration-300"
+          >
+            <button
+              aria-controls="faq-answer-3"
+              class="text-foreground focus-visible:ring-primary flex w-full cursor-pointer items-center justify-between gap-4 text-left font-semibold outline-none select-none focus:outline-none focus-visible:ring-2"
+              [attr.aria-expanded]="openFaqs()[3] || false"
+              (click)="toggleFaq(3)"
+            >
+              <span i18n>Can you help audit and optimize cloud costs?</span>
+              <span
+                class="text-muted-foreground transition-transform duration-300"
+                [class.rotate-180]="openFaqs()[3]"
+              >
+                <svg
+                  class="h-5 w-5"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                >
+                  <polyline points="6 9 12 15 18 9" />
+                </svg>
+              </span>
+            </button>
+            <div
+              class="grid opacity-0 transition-all duration-300"
+              id="faq-answer-3"
+              role="region"
+              [class.grid-rows-[0fr]]="!openFaqs()[3]"
+              [class.grid-rows-[1fr]]="openFaqs()[3]"
+              [class.mt-4]="openFaqs()[3]"
+              [class.opacity-100]="openFaqs()[3]"
+            >
+              <div class="overflow-hidden">
+                <p
+                  class="text-muted-foreground text-sm leading-relaxed"
+                  i18n
+                >
+                  Yes. I regularly perform cloud infrastructure audits to
+                  identify cost bottlenecks, eliminate resource waste, and
+                  optimize performance. In past engagements, this has led to
+                  significant pipeline speed improvements and up to 70%
+                  reduction in memory/cost footprints.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <!-- Footer Branding Info (Hidden on print) -->
       <footer
         class="border-border text-muted-foreground print-hidden mt-20 flex items-center justify-between gap-4 border-t pt-8 text-xs"
@@ -1496,23 +1743,49 @@ export class HomeComponent implements OnInit {
 
   // Signals
   public showQrModal = signal(false)
+  public openFaqs = signal<Record<number, boolean>>({})
+
+  public toggleFaq(index: number) {
+    this.openFaqs.update(prev => ({
+      ...prev,
+      [index]: !prev[index],
+    }))
+  }
 
   ngOnInit() {
     this.setSeo()
   }
 
   private setSeo() {
-    this.titleService.setTitle(APP_TITLE)
-    this.meta.updateTag({ name: 'description', content: APP_DESCRIPTION })
+    const url = `${APP_URL}/${this.locale}`
+    const title = APP_TITLE
+    const description = APP_DESCRIPTION
+
+    this.titleService.setTitle(title)
+    this.meta.updateTag({ name: 'description', content: description })
+
+    this.meta.updateTag({ property: 'og:title', content: title })
+    this.meta.updateTag({ property: 'og:description', content: description })
+    this.meta.updateTag({ property: 'og:type', content: 'website' })
+    this.meta.updateTag({ property: 'og:url', content: url })
+    this.meta.updateTag({ property: 'og:image', content: APP_IMAGE })
+
+    this.meta.updateTag({
+      name: 'twitter:card',
+      content: 'summary_large_image',
+    })
+    this.meta.updateTag({ name: 'twitter:title', content: title })
+    this.meta.updateTag({ name: 'twitter:description', content: description })
+    this.meta.updateTag({ name: 'twitter:image', content: APP_IMAGE })
 
     // JSON-LD structured data for ProfessionalService
     const professionalServiceSchema = {
       '@context': 'https://schema.org',
       '@type': 'ProfessionalService',
       name: 'Francesco Colamonici — Fractional Technical Architect',
-      image: 'https://francescocolamonici.it/favicon.png',
-      url: 'https://francescocolamonici.it',
-      logo: 'https://francescocolamonici.it/favicon.png',
+      image: APP_IMAGE,
+      url: url,
+      logo: APP_LOGO,
       priceRange: '$$$',
       address: {
         '@type': 'PostalAddress',
@@ -1524,7 +1797,8 @@ export class HomeComponent implements OnInit {
       provider: {
         '@type': 'Person',
         name: 'Francesco Colamonici',
-        url: 'https://francescocolamonici.it',
+        url: url,
+        sameAs: ['https://www.linkedin.com/in/francesco-colamonici'],
         jobTitle: 'Fractional Technical Architect',
         worksFor: {
           '@type': 'Organization',
@@ -1533,7 +1807,47 @@ export class HomeComponent implements OnInit {
       },
     }
 
-    this.seoService.setStructuredData(professionalServiceSchema)
+    // JSON-LD structured data for FAQPage (AEO)
+    const faqSchema = {
+      '@context': 'https://schema.org',
+      '@type': 'FAQPage',
+      mainEntity: [
+        {
+          '@type': 'Question',
+          name: $localize`What is a Fractional Technical Architect?`,
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: $localize`A Fractional Technical Architect provides senior-level software architecture, system design, and technology roadmap leadership on a part-time or project basis. This allows high-growth startups and scaleups to benefit from enterprise-grade technical guidance without the overhead of a full-time executive hire.`,
+          },
+        },
+        {
+          '@type': 'Question',
+          name: $localize`How does a fractional engagement work?`,
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: $localize`Engagements are flexible and tailored to your company's phase. Typical formats include weekly advisory retainers, deep-dive system design audits, cloud migration roadmap design, or helping you build, scale, and mentor your internal engineering team.`,
+          },
+        },
+        {
+          '@type': 'Question',
+          name: $localize`What technology stacks do you specialize in?`,
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: $localize`I specialize in designing scalable systems using TypeScript/Node.js (NestJS), Angular, React, Go, and C#. On the cloud and infrastructure side, I have extensive production experience with GCP, Azure, AWS, Docker, Kubernetes, and Terraform.`,
+          },
+        },
+        {
+          '@type': 'Question',
+          name: $localize`Can you help audit and optimize cloud costs?`,
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: $localize`Yes. I regularly perform cloud infrastructure audits to identify cost bottlenecks, eliminate resource waste, and optimize performance. In past engagements, this has led to significant pipeline speed improvements and up to 70% reduction in memory/cost footprints.`,
+          },
+        },
+      ],
+    }
+
+    this.seoService.setStructuredData([professionalServiceSchema, faqSchema])
   }
 
   public printPage() {
