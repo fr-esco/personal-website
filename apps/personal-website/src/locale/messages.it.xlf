@@ -82,13 +82,13 @@
               target=&quot;_blank&quot;
               &gt;"/>BYEBYEQ S.R.L.S.<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a
             &gt;"/></source>
-        <target> Strategic architectural advisory for startups and scaleups. From pharma-grade platforms and Web3 scaling to cross-platform systems (Web, Desktop, Mobile) and multi-cloud infrastructure optimized with a relentless focus on Developer Experience (DevX). Services provided through <x id="START_LINK" ctype="x-a" equiv-text="&lt;a
+        <target> Consulenza architetturale strategica per scaleup e startup ad alta crescita. Dalla progettazione di piattaforme Pharma-grade e scaling Web3, a sistemi cross-platform (Web, Desktop, Mobile) ed infrastrutture multi-cloud ottimizzate con un focus maniacale sulla Developer Experience (DevX). Servizi erogati tramite <x id="START_LINK" ctype="x-a" equiv-text="&lt;a
               class=&quot;no-print-href hover:underline&quot;
               href=&quot;https://byebyeq.com&quot;
               rel=&quot;noopener noreferrer&quot;
               target=&quot;_blank&quot;
               &gt;"/>BYEBYEQ S.R.L.S.<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a
-            &gt;"/></target>
+            &gt;"/> </target>
         <context-group purpose="location">
           <context context-type="sourcefile">apps/personal-website/src/app/home.component.ts</context>
           <context context-type="linenumber">226,238</context>
@@ -166,12 +166,268 @@
           <context context-type="linenumber">418,420</context>
         </context-group>
       </trans-unit>
+      <trans-unit id="7898878918361091938" datatype="html">
+        <source> Selected Case Studies &amp; Impact </source>
+        <target>Casi Studio Selezionati & Impatto</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">apps/personal-website/src/app/home.component.ts</context>
+          <context context-type="linenumber">432,433</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="169788266751212656" datatype="html">
+        <source>Enterprise Retail &amp; Scale</source>
+        <target>Enterprise Retail & Scalabilità</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">apps/personal-website/src/app/home.component.ts</context>
+          <context context-type="linenumber">444,445</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5060688639601612100" datatype="html">
+        <source> Walgreens boots alliance sales platform </source>
+        <target>Piattaforma Vendite Walgreens Boots Alliance</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">apps/personal-website/src/app/home.component.ts</context>
+          <context context-type="linenumber">451</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3500760159910711237" datatype="html">
+        <source> Architected high-availability sales and inventory services supporting 100k+ concurrent users across 8,000+ US locations. Led Microsoft Azure migration strategies, handling billions of transactions daily while coordinating 10 cross-functional developer teams. </source>
+        <target>Progettazione di servizi di vendita e inventario ad alta disponibilità per 100k+ utenti concorrenti in oltre 8.000 negozi negli Stati Uniti. Coordinamento di 10 team di sviluppo e migrazione cloud su Microsoft Azure con gestione di miliardi di transazioni al giorno.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">apps/personal-website/src/app/home.component.ts</context>
+          <context context-type="linenumber">458,461</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1371553127733924023" datatype="html">
+        <source>Scale</source>
+        <target>Scala</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">apps/personal-website/src/app/home.component.ts</context>
+          <context context-type="linenumber">472,473</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="715765610119331722" datatype="html">
+        <source>100k+ users</source>
+        <target>100k+ utenti</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">apps/personal-website/src/app/home.component.ts</context>
+          <context context-type="linenumber">474,475</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8933251162129655734" datatype="html">
+        <source>Reach</source>
+        <target>Negozi</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">apps/personal-website/src/app/home.component.ts</context>
+          <context context-type="linenumber">480,481</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="9000202047077590612" datatype="html">
+        <source>8,000+ stores</source>
+        <target>8.000+ negozi</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">apps/personal-website/src/app/home.component.ts</context>
+          <context context-type="linenumber">482,483</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1061540398514258404" datatype="html">
+        <source>Tech</source>
+        <target>Tech</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">apps/personal-website/src/app/home.component.ts</context>
+          <context context-type="linenumber">488,489</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8779827198560286806" datatype="html">
+        <source>Web3 &amp; Fintech integration</source>
+        <target>Integrazione Web3 & Fintech</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">apps/personal-website/src/app/home.component.ts</context>
+          <context context-type="linenumber">504,505</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4287831198094882385" datatype="html">
+        <source> Airdrop &amp; Crypto-to-Fiat Minting Gateway </source>
+        <target>Gateway Airdrop & Minting Crypto-Fiat</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">apps/personal-website/src/app/home.component.ts</context>
+          <context context-type="linenumber">511</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5714952523992337467" datatype="html">
+        <source> Engineered token distribution and NFT minting platforms for early-stage startups. Integrated Stripe payments with crypto wallets via Viem and Wagmi, enabling seamless credit card NFT purchases alongside decentralized digital document certification. </source>
+        <target>Sviluppo di piattaforme per la distribuzione di token e il minting di NFT per startup. Integrazione di pagamenti Stripe con wallet crypto tramite Viem e Wagmi, consentendo l'acquisto di NFT con carta di credito e certificazione notarile su blockchain.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">apps/personal-website/src/app/home.component.ts</context>
+          <context context-type="linenumber">518,521</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="235800882454190328" datatype="html">
+        <source>Gateway</source>
+        <target>Gateway</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">apps/personal-website/src/app/home.component.ts</context>
+          <context context-type="linenumber">532,533</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5833444382942987849" datatype="html">
+        <source>Crypto &amp; Fiat</source>
+        <target>Crypto & Fiat</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">apps/personal-website/src/app/home.component.ts</context>
+          <context context-type="linenumber">534,535</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4776389683576645610" datatype="html">
+        <source>Checkout</source>
+        <target>Pagamento</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">apps/personal-website/src/app/home.component.ts</context>
+          <context context-type="linenumber">540,541</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5800909818023943951" datatype="html">
+        <source>Stripe integrated</source>
+        <target>Stripe Integrato</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">apps/personal-website/src/app/home.component.ts</context>
+          <context context-type="linenumber">542,543</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3168986747279334952" datatype="html">
+        <source>DevOps &amp; CI/CD optimization</source>
+        <target>Ottimizzazione DevOps & CI/CD</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">apps/personal-website/src/app/home.component.ts</context>
+          <context context-type="linenumber">564,565</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5828840619175034580" datatype="html">
+        <source> Pipeline Performance Acceleration </source>
+        <target>Accelerazione Performance delle Pipeline</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">apps/personal-website/src/app/home.component.ts</context>
+          <context context-type="linenumber">571</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2712927693444830238" datatype="html">
+        <source> Overhauled developer onboarding and delivery flows. Replaced fragmented PowerShell and Shell scripts with standardized GitHub Actions workflows, reducing pipeline execution time and memory overhead by 70%. </source>
+        <target>Riorganizzazione dei flussi di onboarding ed erogazione degli sviluppatori. Sostituzione di script PowerShell e Shell frammentati con flussi GitHub Actions standardizzati, riducendo del 70% il tempo di esecuzione e la memoria richiesta.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">apps/personal-website/src/app/home.component.ts</context>
+          <context context-type="linenumber">578,580</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8926629336940088462" datatype="html">
+        <source>Improvement</source>
+        <target>Risparmio</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">apps/personal-website/src/app/home.component.ts</context>
+          <context context-type="linenumber">591,592</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4810478292323932367" datatype="html">
+        <source>-70% execution</source>
+        <target>-70% tempo</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">apps/personal-website/src/app/home.component.ts</context>
+          <context context-type="linenumber">593,594</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2889601918256567804" datatype="html">
+        <source>Workflows</source>
+        <target>Workflow</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">apps/personal-website/src/app/home.component.ts</context>
+          <context context-type="linenumber">599,600</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="45928223295976550" datatype="html">
+        <source>Orchestration</source>
+        <target>Orchestrazione</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">apps/personal-website/src/app/home.component.ts</context>
+          <context context-type="linenumber">607,608</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5980383544477744359" datatype="html">
+        <source>IoT &amp; Protocol gateways</source>
+        <target>Gateway IoT & Protocolli</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">apps/personal-website/src/app/home.component.ts</context>
+          <context context-type="linenumber">623,624</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6327716961178646819" datatype="html">
+        <source> Unified Multi-Vendor Alarm Gateway </source>
+        <target>Gateway di Allarme Unificato Multi-Vendor</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">apps/personal-website/src/app/home.component.ts</context>
+          <context context-type="linenumber">630</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="592398379140624648" datatype="html">
+        <source> Architected and deployed a highly-available industrial IoT translation gateway. Enabled central surveillance platforms to interact with multi-vendor alarm hubs over diverse, proprietary network communication protocols. </source>
+        <target>Progettazione e deploy di un gateway IoT industriale ad alta disponibilità. Integrazione di centrali di sorveglianza per l'interazione con centraline di allarme multi-marca tramite svariati protocolli proprietari di rete.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">apps/personal-website/src/app/home.component.ts</context>
+          <context context-type="linenumber">637,639</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5611592591303869712" datatype="html">
+        <source>Status</source>
+        <target>Stato</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">apps/personal-website/src/app/home.component.ts</context>
+          <context context-type="linenumber">650,651</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7762319266861746072" datatype="html">
+        <source>Live in Prod</source>
+        <target>In Produzione</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">apps/personal-website/src/app/home.component.ts</context>
+          <context context-type="linenumber">652,653</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4837982949858735713" datatype="html">
+        <source>Interoperability</source>
+        <target>Protocolli</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">apps/personal-website/src/app/home.component.ts</context>
+          <context context-type="linenumber">658,659</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6357843614963710500" datatype="html">
+        <source>Multi-protocol</source>
+        <target>Multi-protocollo</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">apps/personal-website/src/app/home.component.ts</context>
+          <context context-type="linenumber">660,661</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1141886420788473147" datatype="html">
+        <source>Model</source>
+        <target>Modello</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">apps/personal-website/src/app/home.component.ts</context>
+          <context context-type="linenumber">666,667</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="312515578603491042" datatype="html">
+        <source>Unified API</source>
+        <target>API Unificata</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">apps/personal-website/src/app/home.component.ts</context>
+          <context context-type="linenumber">668,669</context>
+        </context-group>
+      </trans-unit>
       <trans-unit id="1399073346928296673" datatype="html">
         <source> Consulting Packages </source>
         <target>Pacchetti di Consulenza</target>
         <context-group purpose="location">
           <context context-type="sourcefile">apps/personal-website/src/app/home.component.ts</context>
-          <context context-type="linenumber">432,433</context>
+          <context context-type="linenumber">681,682</context>
         </context-group>
       </trans-unit>
       <trans-unit id="7527429151597505971" datatype="html">
@@ -179,7 +435,7 @@
         <target> Piani trasparenti per qualificarsi in linea con le esigenze aziendali. </target>
         <context-group purpose="location">
           <context context-type="sourcefile">apps/personal-website/src/app/home.component.ts</context>
-          <context context-type="linenumber">438,439</context>
+          <context context-type="linenumber">687,688</context>
         </context-group>
       </trans-unit>
       <trans-unit id="7335776730130775998" datatype="html">
@@ -187,7 +443,7 @@
         <target>System Audit</target>
         <context-group purpose="location">
           <context context-type="sourcefile">apps/personal-website/src/app/home.component.ts</context>
-          <context context-type="linenumber">453</context>
+          <context context-type="linenumber">702</context>
         </context-group>
       </trans-unit>
       <trans-unit id="1502109608239851212" datatype="html">
@@ -195,7 +451,7 @@
         <target>Revisione una tantum dell'infrastruttura</target>
         <context-group purpose="location">
           <context context-type="sourcefile">apps/personal-website/src/app/home.component.ts</context>
-          <context context-type="linenumber">460</context>
+          <context context-type="linenumber">709</context>
         </context-group>
       </trans-unit>
       <trans-unit id="5690088275953744537" datatype="html">
@@ -203,7 +459,7 @@
         <target>Audit dei costi GCP/Firebase</target>
         <context-group purpose="location">
           <context context-type="sourcefile">apps/personal-website/src/app/home.component.ts</context>
-          <context context-type="linenumber">486,487</context>
+          <context context-type="linenumber">735,736</context>
         </context-group>
       </trans-unit>
       <trans-unit id="4919926413966185667" datatype="html">
@@ -211,7 +467,7 @@
         <target>Analisi di database & velocità query</target>
         <context-group purpose="location">
           <context context-type="sourcefile">apps/personal-website/src/app/home.component.ts</context>
-          <context context-type="linenumber">498,499</context>
+          <context context-type="linenumber">747,748</context>
         </context-group>
       </trans-unit>
       <trans-unit id="4673897663290238106" datatype="html">
@@ -219,7 +475,7 @@
         <target>Verifica isolamento dati multi-tenant</target>
         <context-group purpose="location">
           <context context-type="sourcefile">apps/personal-website/src/app/home.component.ts</context>
-          <context context-type="linenumber">510,511</context>
+          <context context-type="linenumber">759,760</context>
         </context-group>
       </trans-unit>
       <trans-unit id="227054091054249539" datatype="html">
@@ -227,7 +483,7 @@
         <target>Audit DevX & colli di bottiglia CI/CD</target>
         <context-group purpose="location">
           <context context-type="sourcefile">apps/personal-website/src/app/home.component.ts</context>
-          <context context-type="linenumber">522,523</context>
+          <context context-type="linenumber">771,772</context>
         </context-group>
       </trans-unit>
       <trans-unit id="7361403718631151952" datatype="html">
@@ -235,7 +491,7 @@
         <target>Report completo e sessione di revisione di 1 ora</target>
         <context-group purpose="location">
           <context context-type="sourcefile">apps/personal-website/src/app/home.component.ts</context>
-          <context context-type="linenumber">534,535</context>
+          <context context-type="linenumber">783,784</context>
         </context-group>
       </trans-unit>
       <trans-unit id="954899510484588989" datatype="html">
@@ -243,7 +499,7 @@
         <target> Ordina Audit </target>
         <context-group purpose="location">
           <context context-type="sourcefile">apps/personal-website/src/app/home.component.ts</context>
-          <context context-type="linenumber">547</context>
+          <context context-type="linenumber">796</context>
         </context-group>
       </trans-unit>
       <trans-unit id="2978896560659595353" datatype="html">
@@ -251,7 +507,7 @@
         <target>Basso Impegno</target>
         <context-group purpose="location">
           <context context-type="sourcefile">apps/personal-website/src/app/home.component.ts</context>
-          <context context-type="linenumber">560</context>
+          <context context-type="linenumber">809</context>
         </context-group>
       </trans-unit>
       <trans-unit id="2827234865246373018" datatype="html">
@@ -259,7 +515,7 @@
         <target>Sprint Architetturale Settimanale</target>
         <context-group purpose="location">
           <context context-type="sourcefile">apps/personal-website/src/app/home.component.ts</context>
-          <context context-type="linenumber">568</context>
+          <context context-type="linenumber">817</context>
         </context-group>
       </trans-unit>
       <trans-unit id="7630229041689022644" datatype="html">
@@ -267,7 +523,7 @@
         <target>Consulenza ed esecuzione a breve termine</target>
         <context-group purpose="location">
           <context context-type="sourcefile">apps/personal-website/src/app/home.component.ts</context>
-          <context context-type="linenumber">575</context>
+          <context context-type="linenumber">824</context>
         </context-group>
       </trans-unit>
       <trans-unit id="6440944722792061568" datatype="html">
@@ -275,7 +531,7 @@
         <target>Accesso asincrono Slack 7 giorni su 7</target>
         <context-group purpose="location">
           <context context-type="sourcefile">apps/personal-website/src/app/home.component.ts</context>
-          <context context-type="linenumber">604,605</context>
+          <context context-type="linenumber">853,854</context>
         </context-group>
       </trans-unit>
       <trans-unit id="6692309827817085158" datatype="html">
@@ -283,7 +539,7 @@
         <target>Revisione di RFC e PR di System Design</target>
         <context-group purpose="location">
           <context context-type="sourcefile">apps/personal-website/src/app/home.component.ts</context>
-          <context context-type="linenumber">616,617</context>
+          <context context-type="linenumber">865,866</context>
         </context-group>
       </trans-unit>
       <trans-unit id="8320836982006653068" datatype="html">
@@ -291,7 +547,7 @@
         <target>CI/CD & bootstrap degli ambienti</target>
         <context-group purpose="location">
           <context context-type="sourcefile">apps/personal-website/src/app/home.component.ts</context>
-          <context context-type="linenumber">628,629</context>
+          <context context-type="linenumber">877,878</context>
         </context-group>
       </trans-unit>
       <trans-unit id="4831495933849331064" datatype="html">
@@ -299,7 +555,7 @@
         <target>Fino a 4 ore di deep work dedicate</target>
         <context-group purpose="location">
           <context context-type="sourcefile">apps/personal-website/src/app/home.component.ts</context>
-          <context context-type="linenumber">640,641</context>
+          <context context-type="linenumber">889,890</context>
         </context-group>
       </trans-unit>
       <trans-unit id="5994093728613144448" datatype="html">
@@ -307,7 +563,7 @@
         <target>1 sessione live di 1 ora di allineamento del design</target>
         <context-group purpose="location">
           <context context-type="sourcefile">apps/personal-website/src/app/home.component.ts</context>
-          <context context-type="linenumber">652,653</context>
+          <context context-type="linenumber">901,902</context>
         </context-group>
       </trans-unit>
       <trans-unit id="3483396954924290344" datatype="html">
@@ -315,7 +571,7 @@
         <target> Inizia Sprint </target>
         <context-group purpose="location">
           <context context-type="sourcefile">apps/personal-website/src/app/home.component.ts</context>
-          <context context-type="linenumber">665</context>
+          <context context-type="linenumber">914</context>
         </context-group>
       </trans-unit>
       <trans-unit id="720574744068332920" datatype="html">
@@ -323,7 +579,7 @@
         <target>Advisory Fractional Mensile</target>
         <context-group purpose="location">
           <context context-type="sourcefile">apps/personal-website/src/app/home.component.ts</context>
-          <context context-type="linenumber">680</context>
+          <context context-type="linenumber">929</context>
         </context-group>
       </trans-unit>
       <trans-unit id="2992390102669171954" datatype="html">
@@ -331,7 +587,7 @@
         <target>Partnership architetturale continuativa</target>
         <context-group purpose="location">
           <context context-type="sourcefile">apps/personal-website/src/app/home.component.ts</context>
-          <context context-type="linenumber">687</context>
+          <context context-type="linenumber">936</context>
         </context-group>
       </trans-unit>
       <trans-unit id="1165733469523925096" datatype="html">
@@ -339,7 +595,7 @@
         <target>Integrazione mensile completa Slack e PR</target>
         <context-group purpose="location">
           <context context-type="sourcefile">apps/personal-website/src/app/home.component.ts</context>
-          <context context-type="linenumber">716,717</context>
+          <context context-type="linenumber">965,966</context>
         </context-group>
       </trans-unit>
       <trans-unit id="2387426807344058248" datatype="html">
@@ -347,7 +603,7 @@
         <target>Allineamenti live settimanali di 1 ora</target>
         <context-group purpose="location">
           <context context-type="sourcefile">apps/personal-website/src/app/home.component.ts</context>
-          <context context-type="linenumber">728,729</context>
+          <context context-type="linenumber">977,978</context>
         </context-group>
       </trans-unit>
       <trans-unit id="5624794890220497772" datatype="html">
@@ -355,7 +611,7 @@
         <target>Consulenza Web3, dApp & Multi-Cloud</target>
         <context-group purpose="location">
           <context context-type="sourcefile">apps/personal-website/src/app/home.component.ts</context>
-          <context context-type="linenumber">740,741</context>
+          <context context-type="linenumber">989,990</context>
         </context-group>
       </trans-unit>
       <trans-unit id="7156155174122214993" datatype="html">
@@ -363,7 +619,7 @@
         <target>Fino a 10 ore mensili di deep work</target>
         <context-group purpose="location">
           <context context-type="sourcefile">apps/personal-website/src/app/home.component.ts</context>
-          <context context-type="linenumber">752,753</context>
+          <context context-type="linenumber">1001,1002</context>
         </context-group>
       </trans-unit>
       <trans-unit id="1750311072064561041" datatype="html">
@@ -371,15 +627,15 @@
         <target>Mentoring strategico di system design</target>
         <context-group purpose="location">
           <context context-type="sourcefile">apps/personal-website/src/app/home.component.ts</context>
-          <context context-type="linenumber">764,765</context>
+          <context context-type="linenumber">1013,1014</context>
         </context-group>
       </trans-unit>
       <trans-unit id="7410598877106672517" datatype="html">
         <source> Subscribe </source>
-        <target> Attiva Retainer </target>
+        <target> Attiva </target>
         <context-group purpose="location">
           <context context-type="sourcefile">apps/personal-website/src/app/home.component.ts</context>
-          <context context-type="linenumber">777</context>
+          <context context-type="linenumber">1026</context>
         </context-group>
       </trans-unit>
       <trans-unit id="4475029330748043504" datatype="html">
@@ -387,7 +643,7 @@
         <target>Ecosistema Tecnologico & Competenze</target>
         <context-group purpose="location">
           <context context-type="sourcefile">apps/personal-website/src/app/home.component.ts</context>
-          <context context-type="linenumber">789,790</context>
+          <context context-type="linenumber">1038,1039</context>
         </context-group>
       </trans-unit>
       <trans-unit id="33807673463687071" datatype="html">
@@ -395,7 +651,7 @@
         <target>Frontend & Mobile</target>
         <context-group purpose="location">
           <context context-type="sourcefile">apps/personal-website/src/app/home.component.ts</context>
-          <context context-type="linenumber">797</context>
+          <context context-type="linenumber">1046</context>
         </context-group>
       </trans-unit>
       <trans-unit id="2245205775390639507" datatype="html">
@@ -403,7 +659,7 @@
         <target>Backend & Desktop</target>
         <context-group purpose="location">
           <context context-type="sourcefile">apps/personal-website/src/app/home.component.ts</context>
-          <context context-type="linenumber">827</context>
+          <context context-type="linenumber">1076</context>
         </context-group>
       </trans-unit>
       <trans-unit id="6198373025475754300" datatype="html">
@@ -411,7 +667,7 @@
         <target>Cloud & DevOps</target>
         <context-group purpose="location">
           <context context-type="sourcefile">apps/personal-website/src/app/home.component.ts</context>
-          <context context-type="linenumber">853</context>
+          <context context-type="linenumber">1102</context>
         </context-group>
       </trans-unit>
       <trans-unit id="4629112637065984104" datatype="html">
@@ -419,7 +675,7 @@
         <target>Data & Web3</target>
         <context-group purpose="location">
           <context context-type="sourcefile">apps/personal-website/src/app/home.component.ts</context>
-          <context context-type="linenumber">883</context>
+          <context context-type="linenumber">1132</context>
         </context-group>
       </trans-unit>
       <trans-unit id="5141764106153042616" datatype="html">
@@ -427,7 +683,7 @@
         <target> Punti di Forza </target>
         <context-group purpose="location">
           <context context-type="sourcefile">apps/personal-website/src/app/home.component.ts</context>
-          <context context-type="linenumber">913</context>
+          <context context-type="linenumber">1162</context>
         </context-group>
       </trans-unit>
       <trans-unit id="5916539659206295252" datatype="html">
@@ -435,7 +691,7 @@
         <target>Esperienza Enterprise & Pharma:</target>
         <context-group purpose="location">
           <context context-type="sourcefile">apps/personal-website/src/app/home.component.ts</context>
-          <context context-type="linenumber">925,926</context>
+          <context context-type="linenumber">1174,1175</context>
         </context-group>
       </trans-unit>
       <trans-unit id="6820667614338442629" datatype="html">
@@ -443,7 +699,7 @@
         <target> Guida dell'innovazione architetturale da neolaureato in matematica a Solution Architect per Big Pharma, con scaling di infrastrutture enterprise.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">apps/personal-website/src/app/home.component.ts</context>
-          <context context-type="linenumber">931,932</context>
+          <context context-type="linenumber">1180,1181</context>
         </context-group>
       </trans-unit>
       <trans-unit id="4356702137051861369" datatype="html">
@@ -451,7 +707,7 @@
         <target>Full-Stack & Multi-Piattaforma:</target>
         <context-group purpose="location">
           <context context-type="sourcefile">apps/personal-website/src/app/home.component.ts</context>
-          <context context-type="linenumber">946,947</context>
+          <context context-type="linenumber">1195,1196</context>
         </context-group>
       </trans-unit>
       <trans-unit id="4000890300363466002" datatype="html">
@@ -459,7 +715,7 @@
         <target> Esperto degli ecosistemi Angular, React (Next.js, Remix), oltre a wrapper desktop (Electron) e mobile (Capacitor).</target>
         <context-group purpose="location">
           <context context-type="sourcefile">apps/personal-website/src/app/home.component.ts</context>
-          <context context-type="linenumber">952,953</context>
+          <context context-type="linenumber">1201,1202</context>
         </context-group>
       </trans-unit>
       <trans-unit id="1706458455117321317" datatype="html">
@@ -467,7 +723,7 @@
         <target>Esecuzione Startup & Web3:</target>
         <context-group purpose="location">
           <context context-type="sourcefile">apps/personal-website/src/app/home.component.ts</context>
-          <context context-type="linenumber">966,967</context>
+          <context context-type="linenumber">1215,1216</context>
         </context-group>
       </trans-unit>
       <trans-unit id="327027807078763720" datatype="html">
@@ -475,7 +731,7 @@
         <target> Esperienza comprovata nella progettazione di componenti decentralizzati (dApp) e integrazioni Web3 per startup in fase iniziale.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">apps/personal-website/src/app/home.component.ts</context>
-          <context context-type="linenumber">972,973</context>
+          <context context-type="linenumber">1221,1222</context>
         </context-group>
       </trans-unit>
       <trans-unit id="5611526532384774469" datatype="html">
@@ -483,7 +739,7 @@
         <target>Multi-Cloud & DevOps:</target>
         <context-group purpose="location">
           <context context-type="sourcefile">apps/personal-website/src/app/home.component.ts</context>
-          <context context-type="linenumber">986,987</context>
+          <context context-type="linenumber">1235,1236</context>
         </context-group>
       </trans-unit>
       <trans-unit id="506818654198298798" datatype="html">
@@ -491,7 +747,7 @@
         <target> Esperienza in ambiente di produzione con GCP, Azure e AWS, inclusi 6 mesi dedicati a DevOps e orchestrazione CI/CD.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">apps/personal-website/src/app/home.component.ts</context>
-          <context context-type="linenumber">992,993</context>
+          <context context-type="linenumber">1241,1242</context>
         </context-group>
       </trans-unit>
       <trans-unit id="4460973320985345225" datatype="html">
@@ -499,7 +755,7 @@
         <target>DevX & Laurea con Lode in Matematica:</target>
         <context-group purpose="location">
           <context context-type="sourcefile">apps/personal-website/src/app/home.component.ts</context>
-          <context context-type="linenumber">1006,1007</context>
+          <context context-type="linenumber">1255,1256</context>
         </context-group>
       </trans-unit>
       <trans-unit id="9172374440384716115" datatype="html">
@@ -507,7 +763,7 @@
         <target> Rigore logico-matematico applicato per abbattere il debito tecnico e massimizzare la Developer Experience (DevX).</target>
         <context-group purpose="location">
           <context context-type="sourcefile">apps/personal-website/src/app/home.component.ts</context>
-          <context context-type="linenumber">1012,1013</context>
+          <context context-type="linenumber">1261,1262</context>
         </context-group>
       </trans-unit>
       <trans-unit id="2233287223296382741" datatype="html">
@@ -515,7 +771,7 @@
         <target> Qualifiche & Profili </target>
         <context-group purpose="location">
           <context context-type="sourcefile">apps/personal-website/src/app/home.component.ts</context>
-          <context context-type="linenumber">1026</context>
+          <context context-type="linenumber">1275</context>
         </context-group>
       </trans-unit>
       <trans-unit id="2322504549085352411" datatype="html">
@@ -523,7 +779,7 @@
         <target>Cintura Nera in due discipline (Taekwondo e Jujutsu)</target>
         <context-group purpose="location">
           <context context-type="sourcefile">apps/personal-website/src/app/home.component.ts</context>
-          <context context-type="linenumber">1037,1038</context>
+          <context context-type="linenumber">1286,1287</context>
         </context-group>
       </trans-unit>
       <trans-unit id="7109320062440641198" datatype="html">
@@ -531,7 +787,7 @@
         <target>Giocatore di Scacchi (~1600 ELO)</target>
         <context-group purpose="location">
           <context context-type="sourcefile">apps/personal-website/src/app/home.component.ts</context>
-          <context context-type="linenumber">1041,1042</context>
+          <context context-type="linenumber">1290,1291</context>
         </context-group>
       </trans-unit>
       <trans-unit id="7380374046476688805" datatype="html">
@@ -539,7 +795,7 @@
         <target>Giocatore e Game Master di D&D</target>
         <context-group purpose="location">
           <context context-type="sourcefile">apps/personal-website/src/app/home.component.ts</context>
-          <context context-type="linenumber">1045,1046</context>
+          <context context-type="linenumber">1294,1295</context>
         </context-group>
       </trans-unit>
       <trans-unit id="1259227039336180634" datatype="html">
@@ -547,7 +803,7 @@
         <target>Certificazione Inglese C2 (Fluente dal 2020)</target>
         <context-group purpose="location">
           <context context-type="sourcefile">apps/personal-website/src/app/home.component.ts</context>
-          <context context-type="linenumber">1081,1082</context>
+          <context context-type="linenumber">1330,1331</context>
         </context-group>
       </trans-unit>
       <trans-unit id="214143975524495762" datatype="html">
@@ -555,7 +811,7 @@
         <target>LinkedIn CV</target>
         <context-group purpose="location">
           <context context-type="sourcefile">apps/personal-website/src/app/home.component.ts</context>
-          <context context-type="linenumber">1103,1104</context>
+          <context context-type="linenumber">1352,1353</context>
         </context-group>
       </trans-unit>
       <trans-unit id="6466881425468523478" datatype="html">
@@ -563,7 +819,7 @@
         <target>GitHub Profile</target>
         <context-group purpose="location">
           <context context-type="sourcefile">apps/personal-website/src/app/home.component.ts</context>
-          <context context-type="linenumber">1122,1123</context>
+          <context context-type="linenumber">1371,1372</context>
         </context-group>
       </trans-unit>
       <trans-unit id="282097801305632244" datatype="html">
@@ -571,7 +827,15 @@
         <target>Stack Overflow</target>
         <context-group purpose="location">
           <context context-type="sourcefile">apps/personal-website/src/app/home.component.ts</context>
-          <context context-type="linenumber">1141,1142</context>
+          <context context-type="linenumber">1390,1391</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4641957542512427572" datatype="html">
+        <source>© 2011-2026 Francesco Colamonici. All rights reserved.</source>
+        <target>© 2011-2026 Francesco Colamonici. Tutti i diritti riservati.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">apps/personal-website/src/app/home.component.ts</context>
+          <context context-type="linenumber">1426,1427</context>
         </context-group>
       </trans-unit>
       <trans-unit id="7241898365465642514" datatype="html">
@@ -582,16 +846,16 @@
             target=&quot;_blank&quot;
             &gt;"/>BYEBYEQ S.R.L.S.<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a
           &gt;"/></source>
-        <target> Services provided through <x id="START_LINK" ctype="x-a" equiv-text="&lt;a
+        <target> Servizi erogati tramite <x id="START_LINK" ctype="x-a" equiv-text="&lt;a
             class=&quot;no-print-href hover:underline&quot;
             href=&quot;https://byebyeq.com&quot;
             rel=&quot;noopener noreferrer&quot;
             target=&quot;_blank&quot;
             &gt;"/>BYEBYEQ S.R.L.S.<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a
-          &gt;"/></target>
+          &gt;"/> </target>
         <context-group purpose="location">
           <context context-type="sourcefile">apps/personal-website/src/app/home.component.ts</context>
-          <context context-type="linenumber">1179,1188</context>
+          <context context-type="linenumber">1428,1437</context>
         </context-group>
       </trans-unit>
       <trans-unit id="8327357094362319329" datatype="html">
@@ -599,7 +863,7 @@
         <target>Scansiona Biglietto da Visita</target>
         <context-group purpose="location">
           <context context-type="sourcefile">apps/personal-website/src/app/home.component.ts</context>
-          <context context-type="linenumber">1212</context>
+          <context context-type="linenumber">1461</context>
         </context-group>
       </trans-unit>
       <trans-unit id="6081015240268109168" datatype="html">
@@ -607,7 +871,7 @@
         <target> Scansiona questo codice QR con la fotocamera del tuo cellulare per importare rapidamente i dati di contatto nella tua rubrica. </target>
         <context-group purpose="location">
           <context context-type="sourcefile">apps/personal-website/src/app/home.component.ts</context>
-          <context context-type="linenumber">1227,1228</context>
+          <context context-type="linenumber">1476,1477</context>
         </context-group>
       </trans-unit>
       <trans-unit id="5547981558491672240" datatype="html">
@@ -615,7 +879,7 @@
         <target> Chiudi </target>
         <context-group purpose="location">
           <context context-type="sourcefile">apps/personal-website/src/app/home.component.ts</context>
-          <context context-type="linenumber">1235</context>
+          <context context-type="linenumber">1484</context>
         </context-group>
       </trans-unit>
       <trans-unit id="4959727169550005200" datatype="html">

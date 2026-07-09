@@ -34,7 +34,7 @@ import { SeoService } from './seo.service'
           <img
             alt="Contact QR Code"
             class="h-20 w-20 border bg-white p-0.5"
-            src="/qr-code.svg"
+            src="qr-code.svg"
           />
           <span class="mt-1 text-[7px] font-medium text-zinc-400"
             >Scan to save contact</span
@@ -44,7 +44,7 @@ import { SeoService } from './seo.service'
           alt="Contact QR Code"
           class="h-28 w-28 bg-white p-0.5"
           height="112"
-          src="/qr-code.svg"
+          src="qr-code.svg"
           width="112"
         />
       </header>
@@ -283,7 +283,7 @@ import { SeoService } from './seo.service'
         >
           <!-- Pillar 1 -->
           <div
-            class="p-6 transition-shadow hover:shadow-md print:border-none print:p-0 print:shadow-none"
+            class="h-full p-6 transition-shadow hover:shadow-md print:border-none print:p-0 print:shadow-none"
             hlmCard
           >
             <div
@@ -327,7 +327,7 @@ import { SeoService } from './seo.service'
 
           <!-- Pillar 2 -->
           <div
-            class="p-6 transition-shadow hover:shadow-md print:border-none print:p-0 print:shadow-none"
+            class="h-full p-6 transition-shadow hover:shadow-md print:border-none print:p-0 print:shadow-none"
             hlmCard
           >
             <div
@@ -380,7 +380,7 @@ import { SeoService } from './seo.service'
 
           <!-- Pillar 3 -->
           <div
-            class="p-6 transition-shadow hover:shadow-md print:border-none print:p-0 print:shadow-none"
+            class="h-full p-6 transition-shadow hover:shadow-md print:border-none print:p-0 print:shadow-none"
             hlmCard
           >
             <div
@@ -419,6 +419,255 @@ import { SeoService } from './seo.service'
               RFC reviews, complex PR analysis, data modeling, and periodic
               alignment to prevent technical debt.
             </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Selected Case Studies (Hidden on print to preserve the 1-page PDF layout) -->
+      <section class="mb-24 print:hidden">
+        <h3
+          class="border-border mb-10 border-b pb-2 text-2xl font-bold"
+          i18n
+        >
+          Selected Case Studies & Impact
+        </h3>
+        <div class="grid grid-cols-1 gap-8 md:grid-cols-2">
+          <!-- Case 1 -->
+          <div
+            class="flex flex-col justify-between p-6 transition-shadow hover:shadow-md"
+            hlmCard
+          >
+            <div>
+              <span
+                class="text-primary text-xs font-semibold tracking-wider uppercase"
+                i18n
+                >Enterprise Retail & Scale</span
+              >
+              <h4
+                class="mt-2 mb-3 text-lg font-bold"
+                hlmCardTitle
+                i18n
+              >
+                Walgreens boots alliance sales platform
+              </h4>
+              <p
+                class="text-muted-foreground text-sm leading-relaxed"
+                hlmCardContent
+                i18n
+              >
+                Architected high-availability sales and inventory services
+                supporting 100k+ concurrent users across 8,000+ US locations.
+                Led Microsoft Azure migration strategies, handling billions of
+                transactions daily while coordinating 10 cross-functional
+                developer teams.
+              </p>
+            </div>
+            <div
+              class="border-border text-foreground mt-6 flex gap-4 border-t pt-4 text-xs font-semibold"
+            >
+              <div>
+                <span
+                  class="text-muted-foreground block text-[10px] font-normal uppercase"
+                  i18n
+                  >Scale</span
+                >
+                <span i18n>100k+ users</span>
+              </div>
+              <div>
+                <span
+                  class="text-muted-foreground block text-[10px] font-normal uppercase"
+                  i18n
+                  >Reach</span
+                >
+                <span i18n>8,000+ stores</span>
+              </div>
+              <div>
+                <span
+                  class="text-muted-foreground block text-[10px] font-normal uppercase"
+                  i18n
+                  >Tech</span
+                >
+                <span>Azure / NestJS</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Case 2 -->
+          <div
+            class="flex flex-col justify-between p-6 transition-shadow hover:shadow-md"
+            hlmCard
+          >
+            <div>
+              <span
+                class="text-primary text-xs font-semibold tracking-wider uppercase"
+                i18n
+                >Web3 & Fintech integration</span
+              >
+              <h4
+                class="mt-2 mb-3 text-lg font-bold"
+                hlmCardTitle
+                i18n
+              >
+                Airdrop & Crypto-to-Fiat Minting Gateway
+              </h4>
+              <p
+                class="text-muted-foreground text-sm leading-relaxed"
+                hlmCardContent
+                i18n
+              >
+                Engineered token distribution and NFT minting platforms for
+                early-stage startups. Integrated Stripe payments with crypto
+                wallets via Viem and Wagmi, enabling seamless credit card NFT
+                purchases alongside decentralized digital document
+                certification.
+              </p>
+            </div>
+            <div
+              class="border-border text-foreground mt-6 flex gap-4 border-t pt-4 text-xs font-semibold"
+            >
+              <div>
+                <span
+                  class="text-muted-foreground block text-[10px] font-normal uppercase"
+                  i18n
+                  >Gateway</span
+                >
+                <span i18n>Crypto & Fiat</span>
+              </div>
+              <div>
+                <span
+                  class="text-muted-foreground block text-[10px] font-normal uppercase"
+                  i18n
+                  >Checkout</span
+                >
+                <span i18n>Stripe integrated</span>
+              </div>
+              <div>
+                <span
+                  class="text-muted-foreground block text-[10px] font-normal uppercase"
+                  i18n
+                  >Tech</span
+                >
+                <span>Viem / Wagmi</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Case 3 -->
+          <div
+            class="flex flex-col justify-between p-6 transition-shadow hover:shadow-md"
+            hlmCard
+          >
+            <div>
+              <span
+                class="text-primary text-xs font-semibold tracking-wider uppercase"
+                i18n
+                >DevOps & CI/CD optimization</span
+              >
+              <h4
+                class="mt-2 mb-3 text-lg font-bold"
+                hlmCardTitle
+                i18n
+              >
+                Pipeline Performance Acceleration
+              </h4>
+              <p
+                class="text-muted-foreground text-sm leading-relaxed"
+                hlmCardContent
+                i18n
+              >
+                Overhauled developer onboarding and delivery flows. Replaced
+                fragmented PowerShell and Shell scripts with standardized GitHub
+                Actions workflows, reducing pipeline execution time and memory
+                overhead by 70%.
+              </p>
+            </div>
+            <div
+              class="border-border text-foreground mt-6 flex gap-4 border-t pt-4 text-xs font-semibold"
+            >
+              <div>
+                <span
+                  class="text-muted-foreground block text-[10px] font-normal uppercase"
+                  i18n
+                  >Improvement</span
+                >
+                <span i18n>-70% execution</span>
+              </div>
+              <div>
+                <span
+                  class="text-muted-foreground block text-[10px] font-normal uppercase"
+                  i18n
+                  >Workflows</span
+                >
+                <span>GitHub Actions</span>
+              </div>
+              <div>
+                <span
+                  class="text-muted-foreground block text-[10px] font-normal uppercase"
+                  i18n
+                  >Orchestration</span
+                >
+                <span>Terraform</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Case 4 -->
+          <div
+            class="flex flex-col justify-between p-6 transition-shadow hover:shadow-md"
+            hlmCard
+          >
+            <div>
+              <span
+                class="text-primary text-xs font-semibold tracking-wider uppercase"
+                i18n
+                >IoT & Protocol gateways</span
+              >
+              <h4
+                class="mt-2 mb-3 text-lg font-bold"
+                hlmCardTitle
+                i18n
+              >
+                Unified Multi-Vendor Alarm Gateway
+              </h4>
+              <p
+                class="text-muted-foreground text-sm leading-relaxed"
+                hlmCardContent
+                i18n
+              >
+                Architected and deployed a highly-available industrial IoT
+                translation gateway. Enabled central surveillance platforms to
+                interact with multi-vendor alarm hubs over diverse, proprietary
+                network communication protocols.
+              </p>
+            </div>
+            <div
+              class="border-border text-foreground mt-6 flex gap-4 border-t pt-4 text-xs font-semibold"
+            >
+              <div>
+                <span
+                  class="text-muted-foreground block text-[10px] font-normal uppercase"
+                  i18n
+                  >Status</span
+                >
+                <span i18n>Live in Prod</span>
+              </div>
+              <div>
+                <span
+                  class="text-muted-foreground block text-[10px] font-normal uppercase"
+                  i18n
+                  >Interoperability</span
+                >
+                <span i18n>Multi-protocol</span>
+              </div>
+              <div>
+                <span
+                  class="text-muted-foreground block text-[10px] font-normal uppercase"
+                  i18n
+                  >Model</span
+                >
+                <span i18n>Unified API</span>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -1174,7 +1423,7 @@ import { SeoService } from './seo.service'
       <footer
         class="border-border text-muted-foreground print-hidden mt-20 flex items-center justify-between gap-4 border-t pt-8 text-xs"
       >
-        <p>© 2011-2026 Francesco Colamonici. All rights reserved.</p>
+        <p i18n>© 2011-2026 Francesco Colamonici. All rights reserved.</p>
         <p i18n>
           Services provided through
           <a
@@ -1217,7 +1466,7 @@ import { SeoService } from './seo.service'
             <img
               alt="My contact in a QR code"
               class="h-48 w-48"
-              src="/qr-code.svg"
+              src="qr-code.svg"
             />
           </div>
           <p
