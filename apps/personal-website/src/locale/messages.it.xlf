@@ -2,36 +2,52 @@
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
   <file source-language="en" datatype="plaintext" original="ng2.template">
     <body>
-      <trans-unit id="2760348523763617036" datatype="html">
-        <source> Running Blog </source>
-        <target> Il Blog </target>
+      <trans-unit id="752397753312824237" datatype="html">
+        <source> Insights &amp; Architectural Reflections </source>
+        <target>Approfondimenti & Riflessioni Architetturali</target>
         <context-group purpose="location">
           <context context-type="sourcefile">apps/personal-website/src/app/blog/blog-list.component.ts</context>
-          <context context-type="linenumber">21,22</context>
+          <context context-type="linenumber">26,27</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="3971798227167038006" datatype="html">
-        <source> Insights, updates, and deep dives into world building and game mastering. </source>
-        <target> Approfondimenti, aggiornamenti e analisi dettagliate su world building e conduzione di partite. </target>
+      <trans-unit id="7230675152471652715" datatype="html">
+        <source> Deep dives into software architecture, scalability strategies, developer experience (DevX), and system design for high-growth tech ventures. </source>
+        <target>Analisi approfondite su architettura software, strategie di scalabilità, developer experience (DevX) e system design per imprese tecnologiche ad alta crescita.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">apps/personal-website/src/app/blog/blog-list.component.ts</context>
-          <context context-type="linenumber">27,28</context>
+          <context context-type="linenumber">32,34</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="5849816410742255535" datatype="html">
-        <source> No posts found for this tag. </source>
-        <target> Nessun articolo trovato per questo tag. </target>
+      <trans-unit id="1258625974047356591" datatype="html">
+        <source>Filtering by:</source>
+        <target>Filtrato per:</target>
         <context-group purpose="location">
           <context context-type="sourcefile">apps/personal-website/src/app/blog/blog-list.component.ts</context>
-          <context context-type="linenumber">73,74</context>
+          <context context-type="linenumber">45,46</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="177874640422243347" datatype="html">
+        <source> No articles found for this topic. </source>
+        <target>Nessun articolo trovato per questo argomento.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">apps/personal-website/src/app/blog/blog-list.component.ts</context>
+          <context context-type="linenumber">83</context>
         </context-group>
       </trans-unit>
       <trans-unit id="291905859207815101" datatype="html">
         <source>View all posts</source>
-        <target>Vedi tutti gli articoli</target>
+        <target>Visualizza tutti gli articoli</target>
         <context-group purpose="location">
           <context context-type="sourcefile">apps/personal-website/src/app/blog/blog-list.component.ts</context>
-          <context context-type="linenumber">79,80</context>
+          <context context-type="linenumber">89,90</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3353941052039483707" datatype="html">
+        <source>Read article</source>
+        <target>Leggi articolo</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">apps/personal-website/src/app/blog/blog-list.component.ts</context>
+          <context context-type="linenumber">147,148</context>
         </context-group>
       </trans-unit>
       <trans-unit id="7945639010742382304" datatype="html">
@@ -39,7 +55,7 @@
         <target>Blog | <x id="PH" equiv-text="APP_TITLE"/></target>
         <context-group purpose="location">
           <context context-type="sourcefile">apps/personal-website/src/app/blog/blog-list.component.ts</context>
-          <context context-type="linenumber">198</context>
+          <context context-type="linenumber">216</context>
         </context-group>
       </trans-unit>
       <trans-unit id="2387308983936782421" datatype="html">
@@ -47,15 +63,23 @@
         <target>Leggi i nostri ultimi articoli del blog</target>
         <context-group purpose="location">
           <context context-type="sourcefile">apps/personal-website/src/app/blog/blog-list.component.ts</context>
-          <context context-type="linenumber">199</context>
+          <context context-type="linenumber">217</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="678519015808755706" datatype="html">
+        <source>Back to articles</source>
+        <target>Torna agli articoli</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">apps/personal-website/src/app/blog/blog-post.component.ts</context>
+          <context context-type="linenumber">42,43</context>
         </context-group>
       </trans-unit>
       <trans-unit id="8024746295770312257" datatype="html">
         <source> Discover More </source>
-        <target> Scopri di più </target>
+        <target>Scopri di Più</target>
         <context-group purpose="location">
           <context context-type="sourcefile">apps/personal-website/src/app/blog/blog-post.component.ts</context>
-          <context context-type="linenumber">40</context>
+          <context context-type="linenumber">63</context>
         </context-group>
       </trans-unit>
       <trans-unit id="1509582790882652936" datatype="html">
@@ -632,7 +656,7 @@
       </trans-unit>
       <trans-unit id="7410598877106672517" datatype="html">
         <source> Subscribe </source>
-        <target> Attiva </target>
+        <target> Attiva Retainer </target>
         <context-group purpose="location">
           <context context-type="sourcefile">apps/personal-website/src/app/home.component.ts</context>
           <context context-type="linenumber">1026</context>
@@ -887,7 +911,7 @@
         <target> Blog </target>
         <context-group purpose="location">
           <context context-type="sourcefile">apps/personal-website/src/app/layout/main-layout.component.html</context>
-          <context context-type="linenumber">31,32</context>
+          <context context-type="linenumber">32,33</context>
         </context-group>
       </trans-unit>
       <trans-unit id="6864805049308666669" datatype="html">
@@ -895,7 +919,7 @@
         <target> Prenota Chiamata </target>
         <context-group purpose="location">
           <context context-type="sourcefile">apps/personal-website/src/app/layout/main-layout.component.html</context>
-          <context context-type="linenumber">41,42</context>
+          <context context-type="linenumber">42,43</context>
         </context-group>
       </trans-unit>
     </body>

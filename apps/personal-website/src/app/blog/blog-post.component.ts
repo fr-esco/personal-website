@@ -2,6 +2,7 @@ import { DOCUMENT } from '@angular/common'
 import { Component, inject, LOCALE_ID, OnInit, signal } from '@angular/core'
 import { Meta, Title } from '@angular/platform-browser'
 import { ActivatedRoute, RouterLink } from '@angular/router'
+import { HlmBadge } from '@spartan-ng/helm/badge'
 import { marked } from 'marked'
 
 import {
@@ -17,9 +18,31 @@ import { BlogPost, BlogService } from './blog.service'
 @Component({
   selector: 'app-blog-post',
   standalone: true,
-  imports: [RouterLink],
+  imports: [RouterLink, HlmBadge],
   template: `
-    <article class="prose lg:prose-xl dark:prose-invert mx-auto px-4 py-20">
+    <article class="prose lg:prose-xl dark:prose-invert mx-auto px-6 py-12 md:py-20">
+      <!-- Back Link -->
+      <div class="mb-8 flex items-center print:hidden">
+        <a
+          class="text-muted-foreground hover:text-primary flex items-center gap-2 text-sm font-semibold transition-colors no-underline"
+          [routerLink]="['/blog']"
+        >
+          <svg
+            class="h-4 w-4"
+            fill="none"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+          >
+            <line x1="19" x2="5" y1="12" y2="12" />
+            <polyline points="12 19 5 12 12 5" />
+          </svg>
+          <span i18n>Back to articles</span>
+        </a>
+      </div>
+
       <!-- Content Section -->
       <section
         class="content-fade-in"
@@ -29,12 +52,12 @@ import { BlogPost, BlogService } from './blog.service'
       <!-- Tags Footer Section -->
       @if (post()?.keywords?.length) {
         <footer
-          class="animate-in fade-in slide-in-from-bottom-4 border-outline-variant mt-16 border-t pt-8 duration-1000"
+          class="animate-in fade-in slide-in-from-bottom-4 border-border mt-16 border-t pt-8 duration-1000"
         >
           <div class="mb-6 flex items-center gap-2">
             <span class="bg-primary h-px w-8 opacity-50"></span>
             <h3
-              class="text-on-surface-variant text-xs font-bold tracking-[0.2em] uppercase"
+              class="text-muted-foreground text-xs font-bold tracking-[0.2em] uppercase"
               i18n
             >
               Discover More
@@ -44,17 +67,13 @@ import { BlogPost, BlogService } from './blog.service'
           <div class="flex flex-wrap gap-3">
             @for (tag of post()?.keywords; track tag) {
               <a
-                class="group from-surface-container to-surface-container-high border-outline-variant text-on-surface-variant hover:border-primary hover:text-primary relative transform cursor-pointer rounded-full border bg-linear-to-br px-4 py-1.5 text-sm font-medium transition-all duration-300 hover:-translate-y-0.5 hover:shadow-[0_0_15px_-5px_var(--color-primary)]"
+                hlmBadge
+                variant="outline"
+                class="hover:bg-primary hover:text-primary-foreground border-border text-muted-foreground bg-muted text-[10px] font-medium tracking-wider uppercase no-underline cursor-pointer transition-colors"
                 [queryParams]="{ tag: tag }"
                 [routerLink]="['/blog']"
               >
-                <span class="relative z-10 flex items-center gap-1.5">
-                  <span
-                    class="text-primary opacity-50 transition-all group-hover:opacity-100"
-                    >#</span
-                  >
-                  {{ tag }}
-                </span>
+                #{{ tag }}
               </a>
             }
           </div>

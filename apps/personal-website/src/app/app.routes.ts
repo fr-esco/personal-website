@@ -1,7 +1,5 @@
 import { Route } from '@angular/router'
 
-import { BlogListComponent } from './blog/blog-list.component'
-import { BlogPostComponent } from './blog/blog-post.component'
 import { HomeComponent } from './home.component'
 import { MainLayoutComponent } from './layout/main-layout.component'
 
@@ -16,11 +14,13 @@ export const appRoutes: Route[] = [
       },
       {
         path: 'blog',
-        component: BlogListComponent,
+        loadComponent: () =>
+          import('./blog/blog-list.component').then((m) => m.BlogListComponent),
       },
       {
         path: 'blog/:slug',
-        component: BlogPostComponent,
+        loadComponent: () =>
+          import('./blog/blog-post.component').then((m) => m.BlogPostComponent),
       },
     ],
   },

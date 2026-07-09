@@ -19,4 +19,9 @@ import { ThemeService } from '../theme.service'
 })
 export class MainLayoutComponent {
   public themeService = inject(ThemeService)
+
+  public preloadBlog() {
+    import('../blog/blog-list.component').catch((err) => console.debug(err))
+    import('../blog/blog-post.component').catch((err) => console.debug(err))
+  }
 }
