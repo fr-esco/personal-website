@@ -835,14 +835,14 @@ import { SeoService } from './seo.service'
               </p>
               <div class="text-foreground mb-6 text-3xl font-extrabold">
                 @if (locale === 'it') {
-                  €1.000
+                  €1.500
                   <span
                     class="text-muted-foreground text-xs font-normal"
                     i18n
                     >+ IVA / week</span
                   >
                 } @else {
-                  $1,500
+                  $1,900
                   <span
                     class="text-muted-foreground text-xs font-normal"
                     i18n
@@ -953,14 +953,14 @@ import { SeoService } from './seo.service'
               </p>
               <div class="text-foreground mb-6 text-3xl font-extrabold">
                 @if (locale === 'it') {
-                  €3.000
+                  €4.000
                   <span
                     class="text-muted-foreground text-xs font-normal"
                     i18n
                     >+ IVA / month</span
                   >
                 } @else {
-                  $4,500
+                  $6,000
                   <span
                     class="text-muted-foreground text-xs font-normal"
                     i18n

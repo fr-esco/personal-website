@@ -2,7 +2,13 @@
   "name": "@personal-website/source",
   "version": "0.0.0",
   "license": "MIT",
-  "scripts": {},
+  "scripts": {
+    "build": "npx nx run personal-website:build",
+    "postbuild": "cp -r dist/apps/personal-website/browser/en/. dist/apps/personal-website/browser/",
+    "dev": "npx nx run personal-website:serve",
+    "host": "firebase emulators:start --only hosting:prod",
+    "deploy": "firebase deploy --only hosting:prod"
+  },
   "private": true,
   "dependencies": {
     "@angular-devkit/build-angular": "~21.2.0",
@@ -59,6 +65,7 @@
     "eslint-config-prettier": "^10.0.0",
     "eslint-plugin-simple-import-sort": "^13.0.0",
     "eslint-plugin-unused-imports": "^4.4.1",
+    "firebase-tools": "^15.23.0",
     "gray-matter": "^4.0.3",
     "jsonc-eslint-parser": "^2.1.0",
     "ng-packagr": "~21.2.0",

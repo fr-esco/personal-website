@@ -1,0 +1,104 @@
+{
+  "hosting": [
+    {
+      "target": "prod",
+      "public": "dist/apps/personal-website/browser",
+      "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
+      "headers": [
+        {
+          "source": "**/*.@(jpg|jpeg|gif|png|svg|webp)",
+          "headers": [
+            {
+              "key": "Cache-Control",
+              "value": "public, max-age=604800, min-fresh=86400, immutable"
+            },
+            {
+              "key": "Access-Control-Allow-Origin",
+              "value": "https://francescocolamonici.it"
+            },
+            {
+              "key": "Access-Control-Allow-Methods",
+              "value": "GET"
+            }
+          ]
+        },
+        {
+          "source": "**/*.webmanifest",
+          "headers": [
+            {
+              "key": "Content-Type",
+              "value": "application/manifest+json; charset=utf-8"
+            },
+            {
+              "key": "Cache-Control",
+              "value": "public, max-age=86400, immutable"
+            },
+            {
+              "key": "Access-Control-Allow-Origin",
+              "value": "https://francescocolamonici.it"
+            },
+            {
+              "key": "Access-Control-Allow-Methods",
+              "value": "GET"
+            }
+          ]
+        },
+        {
+          "source": "**/*.ico",
+          "headers": [
+            {
+              "key": "Content-Type",
+              "value": "image/x-icon"
+            },
+            {
+              "key": "Cache-Control",
+              "value": "public, max-age=604800, min-fresh=86400, immutable"
+            },
+            {
+              "key": "Access-Control-Allow-Origin",
+              "value": "https://francescocolamonici.it"
+            },
+            {
+              "key": "Access-Control-Allow-Methods",
+              "value": "GET"
+            }
+          ]
+        },
+        {
+          "source": "**/*.*",
+          "headers": [
+            {
+              "key": "X-Content-Type-Options",
+              "value": "nosniff"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "target": "default",
+      "public": "honey",
+      "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
+      "redirects": [
+        {
+          "source": "/",
+          "destination": "https://francescocolamonici.it/",
+          "type": 301
+        },
+        {
+          "source": "/:path*",
+          "destination": "https://francescocolamonici.it/:path*",
+          "type": 301
+        }
+      ]
+    }
+  ],
+  "emulators": {
+    "hosting": {
+      "port": 8080
+    },
+    "ui": {
+      "enabled": true
+    }
+  }
+}

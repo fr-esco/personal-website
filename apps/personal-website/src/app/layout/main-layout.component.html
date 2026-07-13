@@ -42,6 +42,29 @@
         Book Call
       </a>
 
+      <!-- Language Switcher -->
+      <button
+        (click)="toggleLanguage()"
+        aria-label="Change Language"
+        class="text-on-surface-variant hover:text-primary rounded-full px-2.5 py-1.5 transition-colors border border-border flex items-center justify-center gap-1.5 cursor-pointer text-xs font-semibold"
+      >
+        <svg
+          class="h-4 w-4"
+          fill="none"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <circle cx="12" cy="12" r="10" />
+          <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20" />
+          <path d="M2 12h20" />
+        </svg>
+        <span class="uppercase">{{ currentLocale.startsWith('it') ? 'IT' : 'EN' }}</span>
+      </button>
+
       <!-- Dark Mode Switcher -->
       <button
         (click)="themeService.toggleDarkMode()"

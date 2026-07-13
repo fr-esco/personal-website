@@ -1,0 +1,18 @@
+{
+  "projects": {
+    "default": "francescocolamonici"
+  },
+  "targets": {
+    "francescocolamonici": {
+      "hosting": {
+        "prod": [
+          "francescocolamonici-prod"
+        ],
+        "default": [
+          "francescocolamonici"
+        ]
+      }
+    }
+  },
+  "etags": {}
+}
