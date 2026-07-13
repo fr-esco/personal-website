@@ -170,6 +170,7 @@ LANGUAGES.forEach(lang => {
         }
       }
 
+      /* Temporarily disable blog pages in sitemap
       addPage(
         `blog/${key}`,
         lang,
@@ -179,10 +180,11 @@ LANGUAGES.forEach(lang => {
         'monthly',
         fm.image
       )
+      */
     })
   }
 
-  // Add Blog Index with latest post date
+  /* Temporarily disable blog index in sitemap
   addPage(
     'blog',
     lang,
@@ -191,6 +193,7 @@ LANGUAGES.forEach(lang => {
     '0.8',
     'weekly'
   )
+  */
 })
 
 const sitemapContent = `<?xml version="1.0" encoding="UTF-8"?>
