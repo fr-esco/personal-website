@@ -235,7 +235,7 @@ import { SeoService } from './seo.service'
             a relentless focus on Developer Experience (DevX). Services provided
             through
             <a
-              class="no-print-href hover:underline"
+              class="no-print-href underline decoration-primary/40 underline-offset-4 transition-all hover:decoration-primary hover:decoration-2"
               href="https://byebyeq.com"
               rel="noopener noreferrer"
               target="_blank"
@@ -313,13 +313,13 @@ import { SeoService } from './seo.service'
                 <path d="M7 11V7a5 5 0 0 1 10 0v4" />
               </svg>
             </div>
-            <h4
+            <h3
               class="mb-3 text-lg print:mb-1 print:flex print:items-center print:gap-1.5 print:text-sm print:font-bold"
               hlmCardTitle
             >
               <span class="text-primary hidden print:inline">🔒</span>
               <span i18n>Multi-Tenancy & Data Isolation</span>
-            </h4>
+            </h3>
             <p
               class="text-muted-foreground p-0 text-sm leading-relaxed print:text-[10px] print:text-zinc-700"
               hlmCardContent
@@ -366,13 +366,13 @@ import { SeoService } from './seo.service'
                 />
               </svg>
             </div>
-            <h4
+            <h3
               class="mb-3 text-lg print:mb-1 print:flex print:items-center print:gap-1.5 print:text-sm print:font-bold"
               hlmCardTitle
             >
               <span class="text-primary hidden print:inline">📈</span>
               <span i18n>Cloud Cost & Performance Audit</span>
-            </h4>
+            </h3>
             <p
               class="text-muted-foreground p-0 text-sm leading-relaxed print:text-[10px] print:text-zinc-700"
               hlmCardContent
@@ -409,13 +409,13 @@ import { SeoService } from './seo.service'
                 <path d="M16 3.13a4 4 0 0 1 0 7.75" />
               </svg>
             </div>
-            <h4
+            <h3
               class="mb-3 text-lg print:mb-1 print:flex print:items-center print:gap-1.5 print:text-sm print:font-bold"
               hlmCardTitle
             >
               <span class="text-primary hidden print:inline">👥</span>
               <span i18n>Fractional Architecture Advisory</span>
-            </h4>
+            </h3>
             <p
               class="text-muted-foreground p-0 text-sm leading-relaxed print:text-[10px] print:text-zinc-700"
               hlmCardContent
@@ -449,13 +449,13 @@ import { SeoService } from './seo.service'
                 i18n
                 >Enterprise Retail & Scale</span
               >
-              <h4
+              <h3
                 class="mt-2 mb-3 text-lg font-bold"
                 hlmCardTitle
                 i18n
               >
                 Walgreens Boots Alliance Inventory Management System
-              </h4>
+              </h3>
               <p
                 class="text-muted-foreground text-sm leading-relaxed"
                 hlmCardContent
@@ -509,13 +509,13 @@ import { SeoService } from './seo.service'
                 i18n
                 >Web3 & Fintech integration</span
               >
-              <h4
+              <h3
                 class="mt-2 mb-3 text-lg font-bold"
                 hlmCardTitle
                 i18n
               >
                 Airdrop & Crypto-to-Fiat Minting Gateway
-              </h4>
+              </h3>
               <p
                 class="text-muted-foreground text-sm leading-relaxed"
                 hlmCardContent
@@ -569,13 +569,13 @@ import { SeoService } from './seo.service'
                 i18n
                 >DevOps & CI/CD optimization</span
               >
-              <h4
+              <h3
                 class="mt-2 mb-3 text-lg font-bold"
                 hlmCardTitle
                 i18n
               >
                 Pipeline Performance Acceleration
-              </h4>
+              </h3>
               <p
                 class="text-muted-foreground text-sm leading-relaxed"
                 hlmCardContent
@@ -628,13 +628,13 @@ import { SeoService } from './seo.service'
                 i18n
                 >IoT & Protocol gateways</span
               >
-              <h4
+              <h3
                 class="mt-2 mb-3 text-lg font-bold"
                 hlmCardTitle
                 i18n
               >
                 Unified Multi-Vendor Alarm Gateway
-              </h4>
+              </h3>
               <p
                 class="text-muted-foreground text-sm leading-relaxed"
                 hlmCardContent
@@ -700,13 +700,13 @@ import { SeoService } from './seo.service'
             hlmCard
           >
             <div>
-              <h4
+              <h3
                 class="mb-2"
                 hlmCardTitle
                 i18n
               >
                 System Audit
-              </h4>
+              </h3>
               <p
                 class="text-muted-foreground mb-6 text-xs"
                 hlmCardDescription
@@ -819,13 +819,13 @@ import { SeoService } from './seo.service'
               Low Commitment
             </span>
             <div>
-              <h4
+              <h3
                 class="mb-2"
                 hlmCardTitle
                 i18n
               >
                 Weekly Architecture Sprint
-              </h4>
+              </h3>
               <p
                 class="text-muted-foreground mb-6 text-xs"
                 hlmCardDescription
@@ -937,13 +937,13 @@ import { SeoService } from './seo.service'
             hlmCard
           >
             <div>
-              <h4
+              <h3
                 class="mb-2"
                 hlmCardTitle
                 i18n
               >
                 Monthly Fractional Advisory
-              </h4>
+              </h3>
               <p
                 class="text-muted-foreground mb-6 text-xs"
                 hlmCardDescription
@@ -1065,12 +1065,12 @@ import { SeoService } from './seo.service'
         </h2>
         <div class="grid grid-cols-2 gap-6 text-sm md:grid-cols-4">
           <div class="space-y-2">
-            <h4
+            <h3
               class="text-foreground font-semibold"
               i18n
             >
               Frontend & Mobile
-            </h4>
+            </h3>
             <div class="flex flex-wrap gap-1.5">
               <span
                 class="bg-primary/5 text-primary border-primary/20 rounded border px-2 py-0.5 text-xs"
@@ -1095,12 +1095,12 @@ import { SeoService } from './seo.service'
             </div>
           </div>
           <div class="space-y-2">
-            <h4
+            <h3
               class="text-foreground font-semibold"
               i18n
             >
               Backend & Desktop
-            </h4>
+            </h3>
             <div class="flex flex-wrap gap-1.5">
               <span
                 class="bg-primary/5 text-primary border-primary/20 rounded border px-2 py-0.5 text-xs"
@@ -1121,12 +1121,12 @@ import { SeoService } from './seo.service'
             </div>
           </div>
           <div class="space-y-2">
-            <h4
+            <h3
               class="text-foreground font-semibold"
               i18n
             >
               Cloud & DevOps
-            </h4>
+            </h3>
             <div class="flex flex-wrap gap-1.5">
               <span
                 class="bg-primary/5 text-primary border-primary/20 rounded border px-2 py-0.5 text-xs"
@@ -1151,12 +1151,12 @@ import { SeoService } from './seo.service'
             </div>
           </div>
           <div class="space-y-2">
-            <h4
+            <h3
               class="text-foreground font-semibold"
               i18n
             >
               Data & Web3
-            </h4>
+            </h3>
             <div class="flex flex-wrap gap-1.5">
               <span
                 class="bg-primary/5 text-primary border-primary/20 rounded border px-2 py-0.5 text-xs"
@@ -1674,7 +1674,7 @@ import { SeoService } from './seo.service'
         <p i18n>
           Services provided through
           <a
-            class="no-print-href hover:underline"
+            class="no-print-href underline decoration-primary/40 underline-offset-4 transition-all hover:decoration-primary hover:decoration-2"
             href="https://byebyeq.com"
             rel="noopener noreferrer"
             target="_blank"

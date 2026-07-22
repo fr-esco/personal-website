@@ -42,7 +42,7 @@
   */
 
   /* Alternative: Ruby Red (Uncomment to use) */
-  --primary: oklch(0.6 0.25 25);
+  --primary: oklch(0.577 0.25 25);
   --primary-foreground: oklch(0.985 0 0);
 
   --secondary: oklch(0.967 0.001 286.375);
@@ -85,7 +85,7 @@
   */
 
   /* Alternative: Ruby Red (Uncomment to use) */
-  --primary: oklch(0.6 0.25 25);
+  --primary: oklch(0.7 0.22 25);
   --primary-foreground: oklch(0.21 0.006 285.885);
 
   --secondary: oklch(0.274 0.006 286.033);
@@ -230,7 +230,7 @@
     gap: 0.15rem !important;
     display: block !important;
   }
-  [hlmCard] h4 {
+  [hlmCard] h3 {
     font-size: 10pt !important;
     font-weight: bold !important;
     color: black !important;
