@@ -42,7 +42,10 @@
   */
 
   /* Alternative: Ruby Red (Uncomment to use) */
-  --primary: oklch(0.577 0.25 25);
+  /* L lowered from 0.577 -> 0.52 so text-primary on the faint bg-primary/5
+     badges AND white text on bg-primary fills (buttons, logo, "Low commitment")
+     clear WCAG AA with margin in light mode (were 4.39 / 4.64). */
+  --primary: oklch(0.52 0.25 25);
   --primary-foreground: oklch(0.985 0 0);
 
   --secondary: oklch(0.967 0.001 286.375);
@@ -109,6 +112,37 @@
 }
 
 @custom-variant dark (&:where(.dark, .dark *));
+
+/* ----------------------------------------------------
+   NO TRANSITION ON LOAD
+   `html.preload` is set synchronously by the inline script in index.html and
+   removed after the first painted frame. While present, it suppresses every
+   transition so color/size transitions don't run (non-composited, main-thread)
+   during initial render/hydration. After removal, transitions work as normal
+   for the manual theme toggle.
+   ---------------------------------------------------- */
+html.preload *,
+html.preload *::before,
+html.preload *::after {
+  transition: none !important;
+}
+
+/* ----------------------------------------------------
+   RENDER PERF: defer below-the-fold sections
+   The home page is a single prerendered document (~7 sections, ~400 nodes).
+   `content-visibility: auto` lets the browser skip style/layout/paint for the
+   sections below the first (hero) until they scroll near the viewport, so the
+   initial render pass — and the LCP heading in the hero — paints sooner.
+   `contain-intrinsic-size: auto <estimate>` reserves space to avoid scroll jank
+   and lets the browser cache each section's real size after first render.
+   Screen only: print must render every section.
+   ---------------------------------------------------- */
+@media screen {
+  main > section:not(:first-of-type) {
+    content-visibility: auto;
+    contain-intrinsic-size: auto 600px;
+  }
+}
 
 @layer base {
   * {

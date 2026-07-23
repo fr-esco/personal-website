@@ -50,6 +50,7 @@ import { SeoService } from './seo.service'
           alt="Contact QR Code"
           class="h-28 w-28 bg-white p-0.5"
           height="112"
+          loading="lazy"
           src="qr-code.svg"
           width="112"
         />
@@ -235,7 +236,7 @@ import { SeoService } from './seo.service'
             a relentless focus on Developer Experience (DevX). Services provided
             through
             <a
-              class="no-print-href underline decoration-primary/40 underline-offset-4 transition-all hover:decoration-primary hover:decoration-2"
+              class="no-print-href decoration-primary/40 hover:decoration-primary underline underline-offset-4 transition-all hover:decoration-2"
               href="https://byebyeq.com"
               rel="noopener noreferrer"
               target="_blank"
@@ -266,13 +267,24 @@ import { SeoService } from './seo.service'
 
         <!-- Profile Image -->
         <div class="order-1 mb-6 shrink-0 md:order-2 md:mb-0 print:hidden">
-          <img
-            alt="Francesco Colamonici"
-            class="border-border h-32 w-32 rounded-full border object-cover shadow-lg md:h-40 md:w-40"
-            height="160"
-            src="https://www.gravatar.com/avatar/82d353ae5a09599ac19268955838fa94?s=160&d=identicon"
-            width="160"
-          />
+          <picture>
+            <source
+              sizes="160px"
+              srcset="profile-320-v1.avif 320w, profile-480-v1.avif 480w"
+              type="image/avif"
+            />
+            <img
+              alt="Francesco Colamonici"
+              class="border-border rounded-full border object-cover shadow-lg"
+              decoding="async"
+              fetchpriority="high"
+              height="160"
+              sizes="160px"
+              src="profile-320-v1.webp"
+              srcset="profile-320-v1.webp 320w, profile-480-v1.webp 480w"
+              width="160"
+            />
+          </picture>
         </div>
       </section>
 
@@ -1674,7 +1686,7 @@ import { SeoService } from './seo.service'
         <p i18n>
           Services provided through
           <a
-            class="no-print-href underline decoration-primary/40 underline-offset-4 transition-all hover:decoration-primary hover:decoration-2"
+            class="no-print-href decoration-primary/40 hover:decoration-primary underline underline-offset-4 transition-all hover:decoration-2"
             href="https://byebyeq.com"
             rel="noopener noreferrer"
             target="_blank"
@@ -1803,6 +1815,18 @@ export class HomeComponent implements OnInit {
         worksFor: {
           '@type': 'Organization',
           name: 'BYEBYEQ S.R.L.S.',
+          address: {
+            '@type': 'PostalAddress',
+            addressLocality: 'Napoli',
+            addressRegion: 'NA',
+            postalCode: '80134',
+            addressCountry: 'IT',
+            streetAddress: 'Corso Vittorio Emanuele, 499',
+          },
+          duns: '441078959',
+          taxID: 'NA-1036530',
+          url: 'https://byebyeq.com',
+          vatID: 'IT09499111210',
         },
       },
     }

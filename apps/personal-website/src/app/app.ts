@@ -155,7 +155,10 @@ export class App {
         },
       ],
     }
-    this.seoService.setStructuredData(schema)
+    // Site-global schema (WebSite + Organization) — its own <script> so it is
+    // not overwritten by page-level JSON-LD (e.g. the home ProfessionalService
+    // + FAQ block).
+    this.seoService.setStructuredData(schema, 'structured-data-global')
   }
 
   private setSeo() {

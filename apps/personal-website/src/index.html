@@ -13,13 +13,21 @@
       rel="icon"
       type="image/x-icon"
     />
-    <!-- Establish the Gravatar connection early to speed up the avatar (3rd-party) load -->
-    <link
-      href="https://www.gravatar.com"
-      rel="preconnect"
-      crossorigin
-    />
     <script>
+      // Disable CSS transitions during the initial load (see `html.preload` in
+      // styles.css). This prevents theme color-transitions from firing on the
+      // first paint / during hydration — they are non-composited (main-thread)
+      // and only exist to animate the manual theme toggle. Removed after the
+      // first painted frame so the toggle still animates afterwards.
+      document.documentElement.classList.add('preload')
+      window.addEventListener('DOMContentLoaded', function () {
+        requestAnimationFrame(function () {
+          requestAnimationFrame(function () {
+            document.documentElement.classList.remove('preload')
+          })
+        })
+      })
+
       if (
         // check if user had saved dark as their
         // theme when accessing page before
