@@ -223,7 +223,7 @@ import { SeoService } from './seo.service'
       <!-- Hero Section -->
       <!-- Hero Section -->
       <section
-        class="mb-20 flex flex-col items-center justify-between gap-12 sm:flex-row md:items-start print:mb-8"
+        class="mb-20 flex flex-col items-center justify-between gap-12 sm:flex-row md:items-start print:mb-4"
       >
         <div class="order-2 flex-1 md:order-1">
           <h1
@@ -253,7 +253,7 @@ import { SeoService } from './seo.service'
 
           <!-- Biography Quote/Hook -->
           <div
-            class="border-primary my-10 border-l-4 pl-6 print:my-4 print:pl-4"
+            class="border-primary my-10 border-l-4 pl-6 print:my-3 print:pl-4"
           >
             <blockquote
               class="text-foreground mb-2 text-lg italic print:mb-1 print:text-xs"
@@ -296,7 +296,7 @@ import { SeoService } from './seo.service'
       </section>
 
       <!-- The Three B2B Services (Pillars using hlm-card) -->
-      <section class="mb-24 print:mb-8">
+      <section class="mb-24 print:mb-4">
         <h2
           class="border-border mb-10 border-b pb-2 text-2xl font-bold print:mb-4 print:pb-1 print:text-base"
           i18n

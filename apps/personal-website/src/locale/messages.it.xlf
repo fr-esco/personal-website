@@ -106,7 +106,7 @@
               target=&quot;_blank&quot;
               &gt;"/>BYEBYEQ S.R.L.S.<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a
             &gt;"/></source>
-        <target> Architettura senior on-demand per startup e scaleup — senza un'assunzione full-time. Progetto, revisiono e metto in sicurezza i tuoi sistemi con la Developer Experience (DevX) al centro, trasformando il debito tecnico in velocità di rilascio. Dai cloud cost audit ai SaaS multi-tenant, fino al cross-platform (Web/Desktop/Mobile) e al Web3. Servizi erogati tramite <x id="START_LINK" ctype="x-a" equiv-text="&lt;a
+        <target> Architettura senior on-demand per startup e scaleup — senza un'assunzione full-time. Progetto, revisiono e metto in sicurezza i tuoi sistemi con la Developer Experience (DevX) al centro, trasformando il debito tecnico in velocità di rilascio. Dai cost audit cloud ai SaaS multi-tenant, dal cross-platform (Web/Desktop/Mobile) al Web3. Servizi erogati tramite <x id="START_LINK" ctype="x-a" equiv-text="&lt;a
               class=&quot;no-print-href hover:underline&quot;
               href=&quot;https://byebyeq.com&quot;
               rel=&quot;noopener noreferrer&quot;
@@ -152,7 +152,7 @@
       </trans-unit>
       <trans-unit id="7141914227025575575" datatype="html">
         <source> Secure backend architecture with logical/physical tenant isolation (Prisma/PostgreSQL). Integration of KMS, encryption at rest, and secure separation for complex SaaS environments. </source>
-        <target> Progettazione di backend blindati con isolamento logico/fisico dei tenant (Prisma/PostgreSQL). Integrazione di KMS, crittografia a riposo e separazione sicura per ambienti SaaS complessi. </target>
+        <target> Backend blindati con isolamento logico/fisico dei tenant (Prisma/PostgreSQL): KMS, crittografia a riposo e separazione sicura per ambienti SaaS complessi. </target>
         <context-group purpose="location">
           <context context-type="sourcefile">apps/personal-website/src/app/home.component.ts</context>
           <context context-type="linenumber">328,330</context>
@@ -168,7 +168,7 @@
       </trans-unit>
       <trans-unit id="6825043085191573549" datatype="html">
         <source> Infrastructure analysis across Google Cloud (GCP), AWS, or Azure to cut compute waste, reduce hosting costs, and optimize CI/CD pipeline speed. </source>
-        <target> Analisi dell'infrastruttura Google Cloud (GCP), AWS o Azure per tagliare gli sprechi computazionali, ridurre i costi di hosting ed ottimizzare la velocità della CI/CD pipeline. </target>
+        <target> Analisi dell'infrastruttura Google Cloud (GCP), AWS o Azure per tagliare gli sprechi, ridurre i costi di hosting e velocizzare la pipeline CI/CD. </target>
         <context-group purpose="location">
           <context context-type="sourcefile">apps/personal-website/src/app/home.component.ts</context>
           <context context-type="linenumber">381,382</context>
@@ -184,7 +184,7 @@
       </trans-unit>
       <trans-unit id="2754842918500756508" datatype="html">
         <source> Asynchronous, strategic support for mid-level development teams. RFC reviews, complex PR analysis, data modeling, and periodic alignment to prevent technical debt. </source>
-        <target> Supporto asincrono e strategico per i team di sviluppo mid-level. Revisione RFC, analisi dei PR complessi, modellazione dati e allineamenti periodici per evitare il debito tecnico. </target>
+        <target> Supporto asincrono e strategico per team di sviluppo mid-level: revisione RFC, analisi dei PR complessi, modellazione dati e allineamenti periodici contro il debito tecnico. </target>
         <context-group purpose="location">
           <context context-type="sourcefile">apps/personal-website/src/app/home.component.ts</context>
           <context context-type="linenumber">424,426</context>
