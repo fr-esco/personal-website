@@ -8,6 +8,13 @@
       content="width=device-width, initial-scale=1"
       name="viewport"
     />
+    <!-- Browser UI color aligned to the primary (Ruby Red). Set by the inline
+         script below to match the resolved theme, and kept in sync with the
+         manual toggle by ThemeService. -->
+    <meta
+      content="#a70000"
+      name="theme-color"
+    />
     <link
       href="favicon.ico"
       rel="icon"
@@ -28,29 +35,18 @@
         })
       })
 
-      if (
-        // check if user had saved dark as their
-        // theme when accessing page before
+      // Resolve theme (saved preference, else OS setting) and apply it before
+      // first paint: html.dark class, persisted value, and the theme-color meta.
+      var isDark =
         localStorage.theme === 'dark' ||
-        // or user's requesting dark color
-        // scheme through operating system
         (!('theme' in localStorage) &&
           window.matchMedia('(prefers-color-scheme: dark)').matches)
-      ) {
-        // then if we have access to the document and the element
-        // we add the dark class to the html element and
-        // store the dark value in the localStorage
-        if (document && document.documentElement) {
-          document.documentElement.classList.add('dark')
-          localStorage.setItem('theme', 'dark')
-        }
-      } else {
-        // else if we have access to the document and the element
-        // we remove the dark class to the html element and
-        // store the value light in the localStorage
-        if (document && document.documentElement) {
-          document.documentElement.classList.remove('dark')
-          localStorage.setItem('theme', 'light')
+      if (document && document.documentElement) {
+        document.documentElement.classList.toggle('dark', isDark)
+        localStorage.setItem('theme', isDark ? 'dark' : 'light')
+        var themeColor = document.querySelector('meta[name="theme-color"]')
+        if (themeColor) {
+          themeColor.setAttribute('content', isDark ? '#ff1616' : '#a70000')
         }
       }
     </script>

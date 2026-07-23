@@ -147,7 +147,17 @@ LANGUAGES.forEach(lang => {
   if (fs.existsSync(appTsPath)) {
     homeLastMod = fs.statSync(appTsPath).mtime.toISOString()
   }
-  addPage('home', lang, `${BASE_URL}/${lang}/`, homeLastMod, '1.0', 'weekly')
+  // Representative image for the home page (the 1200px social/profile photo).
+  // Keep the version in sync with APP_IMAGE / the <picture> in home.component.ts.
+  addPage(
+    'home',
+    lang,
+    `${BASE_URL}/${lang}/`,
+    homeLastMod,
+    '1.0',
+    'weekly',
+    '/profile-og-v1.jpg'
+  )
 
   // 2. Blog Posts & Index LastMod
   let latestBlogDate: Date | null = null

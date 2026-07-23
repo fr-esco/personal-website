@@ -184,7 +184,10 @@ export class App {
       })
     })
     this.meta.updateTag({ property: 'og:image', content: APP_IMAGE })
-    this.meta.updateTag({ property: 'og:image:alt', content: APP_TITLE }) // TODO: add image alt
+    this.meta.updateTag({ property: 'og:image:alt', content: APP_TITLE })
+    this.meta.updateTag({ property: 'og:image:type', content: 'image/jpeg' })
+    this.meta.updateTag({ property: 'og:image:width', content: '1200' })
+    this.meta.updateTag({ property: 'og:image:height', content: '1200' })
     this.meta.updateTag({ property: 'og:url', content: APP_URL })
 
     // Twitter

@@ -68,6 +68,9 @@ export class ThemeService implements OnDestroy {
           this._renderer.removeClass(this._document.documentElement, 'dark')
         }
       }
+      // Keep the browser UI color (theme-color meta) in sync with the toggle.
+      const themeColor = this._document.querySelector('meta[name="theme-color"]')
+      themeColor?.setAttribute('content', theme === 'dark' ? '#ff1616' : '#a70000')
     })
   }
 

@@ -306,7 +306,18 @@ html.preload *::after {
   display: none;
 }
 
-/* Color company links in primary theme color on screen */
-a[href='https://byebyeq.com'] {
-  color: var(--primary);
+/* Company links: primary accent on screen; plain black text in print.
+   In print the URL is already suppressed (.no-print-href), and we must also
+   drop the underline — its color comes from `decoration-primary` (red) and is
+   NOT reset by the print `color: black`, which is what left a stray red underline. */
+@media screen {
+  a[href='https://byebyeq.com'] {
+    color: var(--primary);
+  }
+}
+@media print {
+  a[href='https://byebyeq.com'] {
+    color: black !important;
+    text-decoration: none !important;
+  }
 }

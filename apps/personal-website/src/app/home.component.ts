@@ -30,10 +30,15 @@ import { SeoService } from './seo.service'
           <p class="mt-2 text-sm font-semibold text-zinc-700">
             Fractional Technical Architect & System Design
           </p>
-          <p class="mt-2.5 flex items-center gap-4 text-xs text-zinc-500">
-            <span>info&#64;francescocolamonici.it</span>
-            <span>•</span>
-            <span>https://francescocolamonici.it</span>
+          <p class="mt-2.5 flex flex-wrap items-center gap-x-2 gap-y-1 text-xs text-zinc-500">
+            <span>Napoli, Italia</span>
+            <span class="whitespace-nowrap">•&#160;info&#64;francescocolamonici.it</span>
+            <span class="whitespace-nowrap"
+              >•&#160;https://francescocolamonici.it</span
+            >
+            <span class="whitespace-nowrap"
+              >•&#160;Book a call: cal.com/francescocolamonici</span
+            >
           </p>
         </div>
         <!-- <div class="flex flex-col items-center">
@@ -46,12 +51,14 @@ import { SeoService } from './seo.service'
             >Scan to save contact</span
           >
         </div> -->
+        <!-- Small rasterized QR (~20KB) for the print header: loads eagerly so it
+             is reliably present when printing (a lazy image can be skipped by the
+             print snapshot). The full decorative SVG stays in the on-screen modal. -->
         <img
-          alt="Contact QR Code"
+          alt="Scan to save my contact"
           class="h-28 w-28 bg-white p-0.5"
           height="112"
-          loading="lazy"
-          src="qr-code.svg"
+          src="qr-code-print.png"
           width="112"
         />
       </header>
@@ -228,13 +235,13 @@ import { SeoService } from './seo.service'
           </h1>
           <p
             class="text-muted-foreground mb-8 max-w-3xl text-lg leading-relaxed md:text-xl print:mb-2 print:text-xs print:leading-relaxed"
-            i18n
+            i18n="@@heroLead"
           >
-            Strategic architectural advisory for startups and scaleups. From
-            pharma-grade platforms and Web3 scaling to cross-platform systems
-            (Web, Desktop, Mobile) and multi-cloud infrastructure optimized with
-            a relentless focus on Developer Experience (DevX). Services provided
-            through
+            On-demand senior architecture for startups and scaleups — without a
+            full-time hire. I design, review, and de-risk your systems with
+            Developer Experience (DevX) at the core, turning technical debt into
+            shipping velocity. From cloud cost audits and multi-tenant SaaS to
+            cross-platform (Web/Desktop/Mobile) and Web3. Delivered through
             <a
               class="no-print-href decoration-primary/40 hover:decoration-primary underline underline-offset-4 transition-all hover:decoration-2"
               href="https://byebyeq.com"
@@ -1428,9 +1435,9 @@ import { SeoService } from './seo.service'
                 ><span i18n>Stack Overflow</span>
               </a>
 
-              <!-- Obfuscated E-mail Link -->
+              <!-- Obfuscated E-mail Link (hidden in print — shown in the print header) -->
               <span
-                class="text-muted-foreground flex items-center gap-2 print:text-zinc-700"
+                class="text-muted-foreground flex items-center gap-2 print:hidden"
               >
                 <svg
                   class="h-4 w-4 shrink-0 print:hidden"
@@ -1810,7 +1817,11 @@ export class HomeComponent implements OnInit {
         '@type': 'Person',
         name: 'Francesco Colamonici',
         url: url,
-        sameAs: ['https://www.linkedin.com/in/francesco-colamonici'],
+        sameAs: [
+          'https://www.linkedin.com/in/francesco-colamonici',
+          'https://github.com/fr-esco',
+          'https://stackoverflow.com/users/8682941',
+        ],
         jobTitle: 'Fractional Technical Architect',
         worksFor: {
           '@type': 'Organization',

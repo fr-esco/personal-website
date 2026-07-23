@@ -3,20 +3,26 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://francescocolamonici.it/it/</loc>
-    <lastmod>2026-07-08</lastmod>
+    <lastmod>2026-07-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="it" href="https://francescocolamonici.it/it/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://francescocolamonici.it/en/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://francescocolamonici.it/en/"/>
+    <image:image>
+      <image:loc>https://francescocolamonici.it/profile-og-v1.jpg</image:loc>
+    </image:image>
   </url>
   <url>
     <loc>https://francescocolamonici.it/en/</loc>
-    <lastmod>2026-07-08</lastmod>
+    <lastmod>2026-07-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="it" href="https://francescocolamonici.it/it/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://francescocolamonici.it/en/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://francescocolamonici.it/en/"/>
+    <image:image>
+      <image:loc>https://francescocolamonici.it/profile-og-v1.jpg</image:loc>
+    </image:image>
   </url>
 </urlset>
