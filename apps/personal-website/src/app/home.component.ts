@@ -4,13 +4,7 @@ import { HlmBadge } from '@spartan-ng/helm/badge'
 import { HlmButton } from '@spartan-ng/helm/button'
 import { HlmCardImports } from '@spartan-ng/helm/card'
 
-import {
-  APP_DESCRIPTION,
-  APP_IMAGE,
-  APP_LOGO,
-  APP_TITLE,
-  APP_URL,
-} from './app-seo'
+import { APP_DESCRIPTION, APP_IMAGE, APP_TITLE, APP_URL } from './app-seo'
 import { SeoService } from './seo.service'
 
 @Component({
@@ -28,16 +22,20 @@ import { SeoService } from './seo.service'
             Francesco Colamonici
           </h1>
           <p class="mt-2 text-sm font-semibold text-zinc-700">
-            Fractional Technical Architect & System Design
+            Solution Architect & System Design
           </p>
-          <p class="mt-2.5 flex flex-wrap items-center gap-x-2 gap-y-1 text-xs text-zinc-500">
+          <p
+            class="mt-2.5 flex flex-wrap items-center gap-x-2 gap-y-1 text-xs text-zinc-500"
+          >
             <span>Napoli, Italia</span>
-            <span class="whitespace-nowrap">•&#160;info&#64;francescocolamonici.it</span>
+            <span class="whitespace-nowrap"
+              >•&#160;info&#64;francescocolamonici.it</span
+            >
             <span class="whitespace-nowrap"
               >•&#160;https://francescocolamonici.it</span
             >
             <span class="whitespace-nowrap"
-              >•&#160;Book a call: cal.com/francescocolamonici</span
+              >Book a call: cal.com/francescocolamonici</span
             >
           </p>
         </div>
@@ -74,7 +72,7 @@ import { SeoService } from './seo.service'
           <span
             class="bg-primary h-1.5 w-1.5 animate-pulse rounded-full"
           ></span>
-          <span i18n>Fractional Architect</span>
+          <span i18n="@@bioBadge">Solution Architect</span>
         </span>
 
         <!-- Legacy Site Action Controls -->
@@ -228,27 +226,20 @@ import { SeoService } from './seo.service'
         <div class="order-2 flex-1 md:order-1">
           <h1
             class="text-foreground mb-6 text-4xl font-bold tracking-tight md:text-6xl print:hidden"
-            i18n
+            i18n="@@heroHeading"
           >
-            Fractional Technical Architect & System Design for Startups &
-            Scaleups
+            Solution Architect & System Design for Startups & Scaleups
           </h1>
           <p
             class="text-muted-foreground mb-8 max-w-3xl text-lg leading-relaxed md:text-xl print:mb-2 print:text-xs print:leading-relaxed"
             i18n="@@heroLead"
           >
-            On-demand senior architecture for startups and scaleups — without a
-            full-time hire. I design, review, and de-risk your systems with
-            Developer Experience (DevX) at the core, turning technical debt into
-            shipping velocity. From cloud cost audits and multi-tenant SaaS to
-            cross-platform (Web/Desktop/Mobile) and Web3. Delivered through
-            <a
-              class="no-print-href decoration-primary/40 hover:decoration-primary underline underline-offset-4 transition-all hover:decoration-2"
-              href="https://byebyeq.com"
-              rel="noopener noreferrer"
-              target="_blank"
-              >BYEBYEQ S.R.L.S.</a
-            >
+            Solution Architect with 15 years of enterprise experience — from a
+            Fortune-30 pharma leader (Walgreens Boots Alliance) to Web3 and
+            early-stage startups. I design, review, and de-risk complex systems
+            with Developer Experience (DevX) at the core, turning technical debt
+            into shipping velocity. From cloud cost and multi-tenant SaaS to
+            cross-platform (Web/Desktop/Mobile) and Web3.
           </p>
 
           <!-- Biography Quote/Hook -->
@@ -295,7 +286,7 @@ import { SeoService } from './seo.service'
         </div>
       </section>
 
-      <!-- The Three B2B Services (Pillars using hlm-card) -->
+      <!-- Core Architecture Pillars (areas of expertise) -->
       <section class="mb-24 print:mb-4">
         <h2
           class="border-border mb-10 border-b pb-2 text-2xl font-bold print:mb-4 print:pb-1 print:text-base"
@@ -433,7 +424,9 @@ import { SeoService } from './seo.service'
               hlmCardTitle
             >
               <span class="text-primary hidden print:inline">👥</span>
-              <span i18n>Fractional Architecture Advisory</span>
+              <span i18n="@@pillarAdvisory"
+                >Architecture Advisory & Reviews</span
+              >
             </h3>
             <p
               class="text-muted-foreground p-0 text-sm leading-relaxed print:text-[10px] print:text-zinc-700"
@@ -697,382 +690,389 @@ import { SeoService } from './seo.service'
         </div>
       </section>
 
-      <!-- Pricing Packages Section (Hidden completely when printing as it is action-oriented) -->
-      <section class="mb-24 print:hidden">
-        <h2
-          class="mb-3 text-2xl font-bold"
-          i18n
-        >
-          Consulting Packages
-        </h2>
-        <p
-          class="text-muted-foreground mb-10"
-          i18n
-        >
-          Transparent pricing plans tailored to your business needs.
-        </p>
-
-        <div class="grid grid-cols-1 gap-8 md:grid-cols-3">
-          <!-- Audit Package -->
-          <div
-            class="relative flex flex-col justify-between overflow-hidden p-8"
-            hlmCard
+      <!-- Pricing Packages Section — DISABLED (authority-only mode). Flip @if to re-enable. -->
+      @if (false) {
+        <section class="mb-24 print:hidden">
+          <h2
+            class="mb-3 text-2xl font-bold"
+            i18n
           >
-            <div>
-              <h3
-                class="mb-2"
-                hlmCardTitle
-                i18n
-              >
-                System Audit
-              </h3>
-              <p
-                class="text-muted-foreground mb-6 text-xs"
-                hlmCardDescription
-                i18n
-              >
-                One-time infrastructure review
-              </p>
-              <div class="text-foreground mb-6 text-3xl font-extrabold">
-                @if (locale === 'it') {
-                  €1.900
-                  <span class="text-muted-foreground text-xs font-normal"
-                    >+ IVA</span
-                  >
-                } @else {
-                  $2,900
-                }
-              </div>
-              <ul
-                class="text-muted-foreground mb-8 space-y-3 p-0 text-sm"
-                hlmCardContent
-              >
-                <li class="flex items-center gap-2">
-                  <svg
-                    class="text-primary h-4 w-4 shrink-0"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    viewBox="0 0 24 24"
-                  >
-                    <polyline points="20 6 9 17 4 12" />
-                  </svg>
-                  <span i18n
-                    >Cloud Cost Optimization Audit (GCP, Azure, AWS)</span
-                  >
-                </li>
-                <li class="flex items-center gap-2">
-                  <svg
-                    class="text-primary h-4 w-4 shrink-0"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    viewBox="0 0 24 24"
-                  >
-                    <polyline points="20 6 9 17 4 12" />
-                  </svg>
-                  <span i18n>Database Performance & Query Optimization</span>
-                </li>
-                <li class="flex items-center gap-2">
-                  <svg
-                    class="text-primary h-4 w-4 shrink-0"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    viewBox="0 0 24 24"
-                  >
-                    <polyline points="20 6 9 17 4 12" />
-                  </svg>
-                  <span i18n>Architecture & Data Security Review</span>
-                </li>
-                <li class="flex items-center gap-2">
-                  <svg
-                    class="text-primary h-4 w-4 shrink-0"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    viewBox="0 0 24 24"
-                  >
-                    <polyline points="20 6 9 17 4 12" />
-                  </svg>
-                  <span i18n>Developer Experience & CI/CD Pipeline Audit</span>
-                </li>
-                <li class="flex items-center gap-2">
-                  <svg
-                    class="text-primary h-4 w-4 shrink-0"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    viewBox="0 0 24 24"
-                  >
-                    <polyline points="20 6 9 17 4 12" />
-                  </svg>
-                  <span i18n
-                    >Actionable PDF Roadmap & 90-min Handoff Workshop</span
-                  >
-                </li>
-              </ul>
-            </div>
-            <a
-              class="w-full cursor-pointer py-2.5 text-center"
-              hlmBtn
-              href="https://cal.com/francescocolamonici"
-              i18n
-              rel="noopener noreferrer"
-              target="_blank"
-              variant="outline"
-            >
-              Order Audit
-            </a>
-          </div>
-
-          <!-- Weekly Sprint Package -->
-          <div
-            class="border-primary relative flex flex-col justify-between overflow-hidden border-2 p-8 shadow-sm"
-            hlmCard
+            Consulting Packages
+          </h2>
+          <p
+            class="text-muted-foreground mb-10"
+            i18n
           >
-            <span
-              class="bg-primary text-primary-foreground absolute top-0 right-0 rounded-bl-lg px-3 py-1 text-[10px] font-bold tracking-wider uppercase"
-              i18n
-            >
-              Low Commitment
-            </span>
-            <div>
-              <h3
-                class="mb-2"
-                hlmCardTitle
-                i18n
-              >
-                Weekly Architecture Sprint
-              </h3>
-              <p
-                class="text-muted-foreground mb-6 text-xs"
-                hlmCardDescription
-                i18n
-              >
-                Short-term execution & advisory
-              </p>
-              <div class="text-foreground mb-6 text-3xl font-extrabold">
-                @if (locale === 'it') {
-                  €1.500
-                  <span
-                    class="text-muted-foreground text-xs font-normal"
-                    i18n
-                    >+ IVA / week</span
-                  >
-                } @else {
-                  $1,900
-                  <span
-                    class="text-muted-foreground text-xs font-normal"
-                    i18n
-                    >/ week</span
-                  >
-                }
-              </div>
-              <ul
-                class="text-muted-foreground mb-8 space-y-3 p-0 text-sm"
-                hlmCardContent
-              >
-                <li class="flex items-center gap-2">
-                  <svg
-                    class="text-primary h-4 w-4 shrink-0"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    viewBox="0 0 24 24"
-                  >
-                    <polyline points="20 6 9 17 4 12" />
-                  </svg>
-                  <span i18n>7-Day Priority Async Slack Advisory</span>
-                </li>
-                <li class="flex items-center gap-2">
-                  <svg
-                    class="text-primary h-4 w-4 shrink-0"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    viewBox="0 0 24 24"
-                  >
-                    <polyline points="20 6 9 17 4 12" />
-                  </svg>
-                  <span i18n>Architecture proposals & RFC reviews</span>
-                </li>
-                <li class="flex items-center gap-2">
-                  <svg
-                    class="text-primary h-4 w-4 shrink-0"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    viewBox="0 0 24 24"
-                  >
-                    <polyline points="20 6 9 17 4 12" />
-                  </svg>
-                  <span i18n
-                    >Hands-on Proof of Concept / Boilerplate coding</span
-                  >
-                </li>
-                <li class="flex items-center gap-2">
-                  <svg
-                    class="text-primary h-4 w-4 shrink-0"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    viewBox="0 0 24 24"
-                  >
-                    <polyline points="20 6 9 17 4 12" />
-                  </svg>
-                  <span i18n>Critical infrastructure setup (CI/CD, IaC)</span>
-                </li>
-                <li class="flex items-center gap-2">
-                  <svg
-                    class="text-primary h-4 w-4 shrink-0"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    viewBox="0 0 24 24"
-                  >
-                    <polyline points="20 6 9 17 4 12" />
-                  </svg>
-                  <span i18n>1x Live Design Workshop & alignment session</span>
-                </li>
-              </ul>
-            </div>
-            <a
-              class="bg-primary text-primary-foreground w-full cursor-pointer py-2.5 text-center transition-opacity hover:opacity-90"
-              hlmBtn
-              href="https://cal.com/francescocolamonici"
-              i18n
-              rel="noopener noreferrer"
-              target="_blank"
-              variant="default"
-            >
-              Start Sprint
-            </a>
-          </div>
+            Transparent pricing plans tailored to your business needs.
+          </p>
 
-          <!-- Monthly Retainer Package -->
-          <div
-            class="relative flex flex-col justify-between overflow-hidden p-8"
-            hlmCard
-          >
-            <div>
-              <h3
-                class="mb-2"
-                hlmCardTitle
-                i18n
-              >
-                Monthly Fractional Advisory
-              </h3>
-              <p
-                class="text-muted-foreground mb-6 text-xs"
-                hlmCardDescription
-                i18n
-              >
-                Ongoing architecture partnership
-              </p>
-              <div class="text-foreground mb-6 text-3xl font-extrabold">
-                @if (locale === 'it') {
-                  €4.000
-                  <span
-                    class="text-muted-foreground text-xs font-normal"
-                    i18n
-                    >+ IVA / month</span
-                  >
-                } @else {
-                  $6,000
-                  <span
-                    class="text-muted-foreground text-xs font-normal"
-                    i18n
-                    >/ month</span
-                  >
-                }
-              </div>
-              <ul
-                class="text-muted-foreground mb-8 space-y-3 p-0 text-sm"
-                hlmCardContent
-              >
-                <li class="flex items-center gap-2">
-                  <svg
-                    class="text-primary h-4 w-4 shrink-0"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    viewBox="0 0 24 24"
-                  >
-                    <polyline points="20 6 9 17 4 12" />
-                  </svg>
-                  <span i18n
-                    >Continuous Slack & PR Integration for the dev team</span
-                  >
-                </li>
-                <li class="flex items-center gap-2">
-                  <svg
-                    class="text-primary h-4 w-4 shrink-0"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    viewBox="0 0 24 24"
-                  >
-                    <polyline points="20 6 9 17 4 12" />
-                  </svg>
-                  <span i18n>Weekly Live Design & Alignment Syncs</span>
-                </li>
-                <li class="flex items-center gap-2">
-                  <svg
-                    class="text-primary h-4 w-4 shrink-0"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    viewBox="0 0 24 24"
-                  >
-                    <polyline points="20 6 9 17 4 12" />
-                  </svg>
-                  <span i18n>Strategic Cloud & Architecture Roadmapping</span>
-                </li>
-                <li class="flex items-center gap-2">
-                  <svg
-                    class="text-primary h-4 w-4 shrink-0"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    viewBox="0 0 24 24"
-                  >
-                    <polyline points="20 6 9 17 4 12" />
-                  </svg>
-                  <span i18n
-                    >Unlimited RFC, Database & System Design reviews</span
-                  >
-                </li>
-                <li class="flex items-center gap-2">
-                  <svg
-                    class="text-primary h-4 w-4 shrink-0"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    viewBox="0 0 24 24"
-                  >
-                    <polyline points="20 6 9 17 4 12" />
-                  </svg>
-                  <span i18n
-                    >Engineering Team Mentoring & Tech Leadership Coaching</span
-                  >
-                </li>
-              </ul>
-            </div>
-            <a
-              class="w-full cursor-pointer py-2.5 text-center"
-              hlmBtn
-              href="https://cal.com/francescocolamonici"
-              i18n
-              rel="noopener noreferrer"
-              target="_blank"
-              variant="outline"
+          <div class="grid grid-cols-1 gap-8 md:grid-cols-3">
+            <!-- Audit Package -->
+            <div
+              class="relative flex flex-col justify-between overflow-hidden p-8"
+              hlmCard
             >
-              Subscribe
-            </a>
+              <div>
+                <h3
+                  class="mb-2"
+                  hlmCardTitle
+                  i18n
+                >
+                  System Audit
+                </h3>
+                <p
+                  class="text-muted-foreground mb-6 text-xs"
+                  hlmCardDescription
+                  i18n
+                >
+                  One-time infrastructure review
+                </p>
+                <div class="text-foreground mb-6 text-3xl font-extrabold">
+                  @if (locale === 'it') {
+                    €1.900
+                    <span class="text-muted-foreground text-xs font-normal"
+                      >+ IVA</span
+                    >
+                  } @else {
+                    $2,900
+                  }
+                </div>
+                <ul
+                  class="text-muted-foreground mb-8 space-y-3 p-0 text-sm"
+                  hlmCardContent
+                >
+                  <li class="flex items-center gap-2">
+                    <svg
+                      class="text-primary h-4 w-4 shrink-0"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      viewBox="0 0 24 24"
+                    >
+                      <polyline points="20 6 9 17 4 12" />
+                    </svg>
+                    <span i18n
+                      >Cloud Cost Optimization Audit (GCP, Azure, AWS)</span
+                    >
+                  </li>
+                  <li class="flex items-center gap-2">
+                    <svg
+                      class="text-primary h-4 w-4 shrink-0"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      viewBox="0 0 24 24"
+                    >
+                      <polyline points="20 6 9 17 4 12" />
+                    </svg>
+                    <span i18n>Database Performance & Query Optimization</span>
+                  </li>
+                  <li class="flex items-center gap-2">
+                    <svg
+                      class="text-primary h-4 w-4 shrink-0"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      viewBox="0 0 24 24"
+                    >
+                      <polyline points="20 6 9 17 4 12" />
+                    </svg>
+                    <span i18n>Architecture & Data Security Review</span>
+                  </li>
+                  <li class="flex items-center gap-2">
+                    <svg
+                      class="text-primary h-4 w-4 shrink-0"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      viewBox="0 0 24 24"
+                    >
+                      <polyline points="20 6 9 17 4 12" />
+                    </svg>
+                    <span i18n
+                      >Developer Experience & CI/CD Pipeline Audit</span
+                    >
+                  </li>
+                  <li class="flex items-center gap-2">
+                    <svg
+                      class="text-primary h-4 w-4 shrink-0"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      viewBox="0 0 24 24"
+                    >
+                      <polyline points="20 6 9 17 4 12" />
+                    </svg>
+                    <span i18n
+                      >Actionable PDF Roadmap & 90-min Handoff Workshop</span
+                    >
+                  </li>
+                </ul>
+              </div>
+              <a
+                class="w-full cursor-pointer py-2.5 text-center"
+                hlmBtn
+                href="https://cal.com/francescocolamonici"
+                i18n
+                rel="noopener noreferrer"
+                target="_blank"
+                variant="outline"
+              >
+                Order Audit
+              </a>
+            </div>
+
+            <!-- Weekly Sprint Package -->
+            <div
+              class="border-primary relative flex flex-col justify-between overflow-hidden border-2 p-8 shadow-sm"
+              hlmCard
+            >
+              <span
+                class="bg-primary text-primary-foreground absolute top-0 right-0 rounded-bl-lg px-3 py-1 text-[10px] font-bold tracking-wider uppercase"
+                i18n
+              >
+                Low Commitment
+              </span>
+              <div>
+                <h3
+                  class="mb-2"
+                  hlmCardTitle
+                  i18n
+                >
+                  Weekly Architecture Sprint
+                </h3>
+                <p
+                  class="text-muted-foreground mb-6 text-xs"
+                  hlmCardDescription
+                  i18n
+                >
+                  Short-term execution & advisory
+                </p>
+                <div class="text-foreground mb-6 text-3xl font-extrabold">
+                  @if (locale === 'it') {
+                    €1.500
+                    <span
+                      class="text-muted-foreground text-xs font-normal"
+                      i18n
+                      >+ IVA / week</span
+                    >
+                  } @else {
+                    $1,900
+                    <span
+                      class="text-muted-foreground text-xs font-normal"
+                      i18n
+                      >/ week</span
+                    >
+                  }
+                </div>
+                <ul
+                  class="text-muted-foreground mb-8 space-y-3 p-0 text-sm"
+                  hlmCardContent
+                >
+                  <li class="flex items-center gap-2">
+                    <svg
+                      class="text-primary h-4 w-4 shrink-0"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      viewBox="0 0 24 24"
+                    >
+                      <polyline points="20 6 9 17 4 12" />
+                    </svg>
+                    <span i18n>7-Day Priority Async Slack Advisory</span>
+                  </li>
+                  <li class="flex items-center gap-2">
+                    <svg
+                      class="text-primary h-4 w-4 shrink-0"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      viewBox="0 0 24 24"
+                    >
+                      <polyline points="20 6 9 17 4 12" />
+                    </svg>
+                    <span i18n>Architecture proposals & RFC reviews</span>
+                  </li>
+                  <li class="flex items-center gap-2">
+                    <svg
+                      class="text-primary h-4 w-4 shrink-0"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      viewBox="0 0 24 24"
+                    >
+                      <polyline points="20 6 9 17 4 12" />
+                    </svg>
+                    <span i18n
+                      >Hands-on Proof of Concept / Boilerplate coding</span
+                    >
+                  </li>
+                  <li class="flex items-center gap-2">
+                    <svg
+                      class="text-primary h-4 w-4 shrink-0"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      viewBox="0 0 24 24"
+                    >
+                      <polyline points="20 6 9 17 4 12" />
+                    </svg>
+                    <span i18n>Critical infrastructure setup (CI/CD, IaC)</span>
+                  </li>
+                  <li class="flex items-center gap-2">
+                    <svg
+                      class="text-primary h-4 w-4 shrink-0"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      viewBox="0 0 24 24"
+                    >
+                      <polyline points="20 6 9 17 4 12" />
+                    </svg>
+                    <span i18n
+                      >1x Live Design Workshop & alignment session</span
+                    >
+                  </li>
+                </ul>
+              </div>
+              <a
+                class="bg-primary text-primary-foreground w-full cursor-pointer py-2.5 text-center transition-opacity hover:opacity-90"
+                hlmBtn
+                href="https://cal.com/francescocolamonici"
+                i18n
+                rel="noopener noreferrer"
+                target="_blank"
+                variant="default"
+              >
+                Start Sprint
+              </a>
+            </div>
+
+            <!-- Monthly Retainer Package -->
+            <div
+              class="relative flex flex-col justify-between overflow-hidden p-8"
+              hlmCard
+            >
+              <div>
+                <h3
+                  class="mb-2"
+                  hlmCardTitle
+                  i18n
+                >
+                  Monthly Fractional Advisory
+                </h3>
+                <p
+                  class="text-muted-foreground mb-6 text-xs"
+                  hlmCardDescription
+                  i18n
+                >
+                  Ongoing architecture partnership
+                </p>
+                <div class="text-foreground mb-6 text-3xl font-extrabold">
+                  @if (locale === 'it') {
+                    €4.000
+                    <span
+                      class="text-muted-foreground text-xs font-normal"
+                      i18n
+                      >+ IVA / month</span
+                    >
+                  } @else {
+                    $6,000
+                    <span
+                      class="text-muted-foreground text-xs font-normal"
+                      i18n
+                      >/ month</span
+                    >
+                  }
+                </div>
+                <ul
+                  class="text-muted-foreground mb-8 space-y-3 p-0 text-sm"
+                  hlmCardContent
+                >
+                  <li class="flex items-center gap-2">
+                    <svg
+                      class="text-primary h-4 w-4 shrink-0"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      viewBox="0 0 24 24"
+                    >
+                      <polyline points="20 6 9 17 4 12" />
+                    </svg>
+                    <span i18n
+                      >Continuous Slack & PR Integration for the dev team</span
+                    >
+                  </li>
+                  <li class="flex items-center gap-2">
+                    <svg
+                      class="text-primary h-4 w-4 shrink-0"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      viewBox="0 0 24 24"
+                    >
+                      <polyline points="20 6 9 17 4 12" />
+                    </svg>
+                    <span i18n>Weekly Live Design & Alignment Syncs</span>
+                  </li>
+                  <li class="flex items-center gap-2">
+                    <svg
+                      class="text-primary h-4 w-4 shrink-0"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      viewBox="0 0 24 24"
+                    >
+                      <polyline points="20 6 9 17 4 12" />
+                    </svg>
+                    <span i18n>Strategic Cloud & Architecture Roadmapping</span>
+                  </li>
+                  <li class="flex items-center gap-2">
+                    <svg
+                      class="text-primary h-4 w-4 shrink-0"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      viewBox="0 0 24 24"
+                    >
+                      <polyline points="20 6 9 17 4 12" />
+                    </svg>
+                    <span i18n
+                      >Unlimited RFC, Database & System Design reviews</span
+                    >
+                  </li>
+                  <li class="flex items-center gap-2">
+                    <svg
+                      class="text-primary h-4 w-4 shrink-0"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      viewBox="0 0 24 24"
+                    >
+                      <polyline points="20 6 9 17 4 12" />
+                    </svg>
+                    <span i18n
+                      >Engineering Team Mentoring & Tech Leadership
+                      Coaching</span
+                    >
+                  </li>
+                </ul>
+              </div>
+              <a
+                class="w-full cursor-pointer py-2.5 text-center"
+                hlmBtn
+                href="https://cal.com/francescocolamonici"
+                i18n
+                rel="noopener noreferrer"
+                target="_blank"
+                variant="outline"
+              >
+                Subscribe
+              </a>
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
+      }
 
       <!-- Technical Ecosystem Section (Hidden on print) -->
       <section class="mb-24 print:hidden">
@@ -1475,28 +1475,135 @@ import { SeoService } from './seo.service'
           </h2>
           <p
             class="text-muted-foreground mx-auto mt-4 max-w-2xl text-base"
-            i18n
+            i18n="@@faqIntro"
           >
-            Got questions about fractional services, technical advisory, or
-            engagement models? Find answers below.
+            Questions about architecture, system design, or cloud optimization?
+            Find answers below.
           </p>
         </header>
 
         <div class="mx-auto max-w-3xl space-y-4">
-          <!-- FAQ 0 -->
+          <!-- FAQ 0 & 1 — DISABLED (fractional-oriented). Flip @if to re-enable. -->
+          @if (false) {
+            <!-- FAQ 0 -->
+            <div
+              class="border-border bg-card rounded-xl border p-6 transition-all duration-300"
+            >
+              <button
+                aria-controls="faq-answer-0"
+                class="text-foreground focus-visible:ring-primary flex w-full cursor-pointer items-center justify-between gap-4 text-left font-semibold outline-none select-none focus:outline-none focus-visible:ring-2"
+                [attr.aria-expanded]="openFaqs()[0] || false"
+                (click)="toggleFaq(0)"
+              >
+                <span i18n>What is a Fractional Technical Architect?</span>
+                <span
+                  class="text-muted-foreground transition-transform duration-300"
+                  [class.rotate-180]="openFaqs()[0]"
+                >
+                  <svg
+                    class="h-5 w-5"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    viewBox="0 0 24 24"
+                  >
+                    <polyline points="6 9 12 15 18 9" />
+                  </svg>
+                </span>
+              </button>
+              <div
+                class="grid opacity-0 transition-all duration-300"
+                id="faq-answer-0"
+                role="region"
+                [class.grid-rows-[0fr]]="!openFaqs()[0]"
+                [class.grid-rows-[1fr]]="openFaqs()[0]"
+                [class.mt-4]="openFaqs()[0]"
+                [class.opacity-100]="openFaqs()[0]"
+              >
+                <div class="overflow-hidden">
+                  <p
+                    class="text-muted-foreground text-sm leading-relaxed"
+                    i18n
+                  >
+                    A Fractional Technical Architect provides senior-level
+                    software architecture, system design, and technology roadmap
+                    leadership on a part-time or project basis. This allows
+                    high-growth startups and scaleups to benefit from
+                    enterprise-grade technical guidance without the overhead of
+                    a full-time executive hire.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- FAQ 1 -->
+            <div
+              class="border-border bg-card rounded-xl border p-6 transition-all duration-300"
+            >
+              <button
+                aria-controls="faq-answer-1"
+                class="text-foreground focus-visible:ring-primary flex w-full cursor-pointer items-center justify-between gap-4 text-left font-semibold outline-none select-none focus:outline-none focus-visible:ring-2"
+                [attr.aria-expanded]="openFaqs()[1] || false"
+                (click)="toggleFaq(1)"
+              >
+                <span i18n>How does a fractional engagement work?</span>
+                <span
+                  class="text-muted-foreground transition-transform duration-300"
+                  [class.rotate-180]="openFaqs()[1]"
+                >
+                  <svg
+                    class="h-5 w-5"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    viewBox="0 0 24 24"
+                  >
+                    <polyline points="6 9 12 15 18 9" />
+                  </svg>
+                </span>
+              </button>
+              <div
+                class="grid opacity-0 transition-all duration-300"
+                id="faq-answer-1"
+                role="region"
+                [class.grid-rows-[0fr]]="!openFaqs()[1]"
+                [class.grid-rows-[1fr]]="openFaqs()[1]"
+                [class.mt-4]="openFaqs()[1]"
+                [class.opacity-100]="openFaqs()[1]"
+              >
+                <div class="overflow-hidden">
+                  <p
+                    class="text-muted-foreground text-sm leading-relaxed"
+                    i18n
+                  >
+                    Engagements are flexible and tailored to your company's
+                    phase. Typical formats include weekly advisory retainers,
+                    deep-dive system design audits, cloud migration roadmap
+                    design, or helping you build, scale, and mentor your
+                    internal engineering team.
+                  </p>
+                </div>
+              </div>
+            </div>
+          }
+
+          <!-- FAQ A -->
           <div
             class="border-border bg-card rounded-xl border p-6 transition-all duration-300"
           >
             <button
-              aria-controls="faq-answer-0"
+              aria-controls="faq-answer-4"
               class="text-foreground focus-visible:ring-primary flex w-full cursor-pointer items-center justify-between gap-4 text-left font-semibold outline-none select-none focus:outline-none focus-visible:ring-2"
-              [attr.aria-expanded]="openFaqs()[0] || false"
-              (click)="toggleFaq(0)"
+              [attr.aria-expanded]="openFaqs()[4] || false"
+              (click)="toggleFaq(4)"
             >
-              <span i18n>What is a Fractional Technical Architect?</span>
+              <span i18n="@@faqSAvsSWQ"
+                >What is a Solution Architect, and how is it different from a
+                Software Architect?</span
+              >
               <span
                 class="text-muted-foreground transition-transform duration-300"
-                [class.rotate-180]="openFaqs()[0]"
+                [class.rotate-180]="openFaqs()[4]"
               >
                 <svg
                   class="h-5 w-5"
@@ -1511,43 +1618,46 @@ import { SeoService } from './seo.service'
             </button>
             <div
               class="grid opacity-0 transition-all duration-300"
-              id="faq-answer-0"
+              id="faq-answer-4"
               role="region"
-              [class.grid-rows-[0fr]]="!openFaqs()[0]"
-              [class.grid-rows-[1fr]]="openFaqs()[0]"
-              [class.mt-4]="openFaqs()[0]"
-              [class.opacity-100]="openFaqs()[0]"
+              [class.grid-rows-[0fr]]="!openFaqs()[4]"
+              [class.grid-rows-[1fr]]="openFaqs()[4]"
+              [class.mt-4]="openFaqs()[4]"
+              [class.opacity-100]="openFaqs()[4]"
             >
               <div class="overflow-hidden">
                 <p
                   class="text-muted-foreground text-sm leading-relaxed"
-                  i18n
+                  i18n="@@faqSAvsSWA"
                 >
-                  A Fractional Technical Architect provides senior-level
-                  software architecture, system design, and technology roadmap
-                  leadership on a part-time or project basis. This allows
-                  high-growth startups and scaleups to benefit from
-                  enterprise-grade technical guidance without the overhead of a
-                  full-time executive hire.
+                  A Solution Architect designs how software, data, and
+                  infrastructure fit together to solve a business problem
+                  end-to-end, bridging technical teams and stakeholders. A
+                  Software Architect focuses more narrowly on the internal
+                  structure of a single application. The Solution Architect owns
+                  the bigger picture: integration, scalability, cost, and
+                  delivery across systems.
                 </p>
               </div>
             </div>
           </div>
 
-          <!-- FAQ 1 -->
+          <!-- FAQ B -->
           <div
             class="border-border bg-card rounded-xl border p-6 transition-all duration-300"
           >
             <button
-              aria-controls="faq-answer-1"
+              aria-controls="faq-answer-5"
               class="text-foreground focus-visible:ring-primary flex w-full cursor-pointer items-center justify-between gap-4 text-left font-semibold outline-none select-none focus:outline-none focus-visible:ring-2"
-              [attr.aria-expanded]="openFaqs()[1] || false"
-              (click)="toggleFaq(1)"
+              [attr.aria-expanded]="openFaqs()[5] || false"
+              (click)="toggleFaq(5)"
             >
-              <span i18n>How does a fractional engagement work?</span>
+              <span i18n="@@faqMultiTenantQ"
+                >What is multi-tenant SaaS architecture?</span
+              >
               <span
                 class="text-muted-foreground transition-transform duration-300"
-                [class.rotate-180]="openFaqs()[1]"
+                [class.rotate-180]="openFaqs()[5]"
               >
                 <svg
                   class="h-5 w-5"
@@ -1562,23 +1672,25 @@ import { SeoService } from './seo.service'
             </button>
             <div
               class="grid opacity-0 transition-all duration-300"
-              id="faq-answer-1"
+              id="faq-answer-5"
               role="region"
-              [class.grid-rows-[0fr]]="!openFaqs()[1]"
-              [class.grid-rows-[1fr]]="openFaqs()[1]"
-              [class.mt-4]="openFaqs()[1]"
-              [class.opacity-100]="openFaqs()[1]"
+              [class.grid-rows-[0fr]]="!openFaqs()[5]"
+              [class.grid-rows-[1fr]]="openFaqs()[5]"
+              [class.mt-4]="openFaqs()[5]"
+              [class.opacity-100]="openFaqs()[5]"
             >
               <div class="overflow-hidden">
                 <p
                   class="text-muted-foreground text-sm leading-relaxed"
-                  i18n
+                  i18n="@@faqMultiTenantA"
                 >
-                  Engagements are flexible and tailored to your company's phase.
-                  Typical formats include weekly advisory retainers, deep-dive
-                  system design audits, cloud migration roadmap design, or
-                  helping you build, scale, and mentor your internal engineering
-                  team.
+                  Multi-tenant SaaS architecture serves many customers (tenants)
+                  from a single shared application while keeping each tenant's
+                  data logically or physically isolated. The main challenges are
+                  secure data isolation, per-tenant configuration, and
+                  cost-efficient scaling. Approaches range from a shared schema
+                  with a tenant key to a database-per-tenant model, chosen based
+                  on security, compliance, and scale.
                 </p>
               </div>
             </div>
@@ -1643,7 +1755,10 @@ import { SeoService } from './seo.service'
               [attr.aria-expanded]="openFaqs()[3] || false"
               (click)="toggleFaq(3)"
             >
-              <span i18n>Can you help audit and optimize cloud costs?</span>
+              <span i18n="@@faqCloudQ"
+                >How do you approach cloud cost and performance
+                optimization?</span
+              >
               <span
                 class="text-muted-foreground transition-transform duration-300"
                 [class.rotate-180]="openFaqs()[3]"
@@ -1671,13 +1786,66 @@ import { SeoService } from './seo.service'
               <div class="overflow-hidden">
                 <p
                   class="text-muted-foreground text-sm leading-relaxed"
-                  i18n
+                  i18n="@@faqCloudA"
                 >
-                  Yes. I regularly perform cloud infrastructure audits to
-                  identify cost bottlenecks, eliminate resource waste, and
-                  optimize performance. In past engagements, this has led to
-                  significant pipeline speed improvements and up to 70%
-                  reduction in memory/cost footprints.
+                  Cloud infrastructure audits to spot cost bottlenecks, cut
+                  resource waste, and tune performance. In past work this has
+                  driven major pipeline speed gains and up to 70% smaller memory
+                  and cost footprints.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ C -->
+          <div
+            class="border-border bg-card rounded-xl border p-6 transition-all duration-300"
+          >
+            <button
+              aria-controls="faq-answer-6"
+              class="text-foreground focus-visible:ring-primary flex w-full cursor-pointer items-center justify-between gap-4 text-left font-semibold outline-none select-none focus:outline-none focus-visible:ring-2"
+              [attr.aria-expanded]="openFaqs()[6] || false"
+              (click)="toggleFaq(6)"
+            >
+              <span i18n="@@faqTechDebtQ"
+                >How can a team reduce technical debt without stopping
+                delivery?</span
+              >
+              <span
+                class="text-muted-foreground transition-transform duration-300"
+                [class.rotate-180]="openFaqs()[6]"
+              >
+                <svg
+                  class="h-5 w-5"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                >
+                  <polyline points="6 9 12 15 18 9" />
+                </svg>
+              </span>
+            </button>
+            <div
+              class="grid opacity-0 transition-all duration-300"
+              id="faq-answer-6"
+              role="region"
+              [class.grid-rows-[0fr]]="!openFaqs()[6]"
+              [class.grid-rows-[1fr]]="openFaqs()[6]"
+              [class.mt-4]="openFaqs()[6]"
+              [class.opacity-100]="openFaqs()[6]"
+            >
+              <div class="overflow-hidden">
+                <p
+                  class="text-muted-foreground text-sm leading-relaxed"
+                  i18n="@@faqTechDebtA"
+                >
+                  Treat technical debt as a business decision, not just cleanup:
+                  make it visible, prioritize the debt that slows delivery or
+                  raises risk, and pay it down incrementally alongside feature
+                  work. Strong Developer Experience (DevX) — fast CI/CD, good
+                  tooling, clear architecture — prevents most debt from
+                  accumulating in the first place.
                 </p>
               </div>
             </div>
@@ -1690,16 +1858,7 @@ import { SeoService } from './seo.service'
         class="border-border text-muted-foreground print-hidden mt-20 flex items-center justify-between gap-4 border-t pt-8 text-xs"
       >
         <p i18n>© 2011-2026 Francesco Colamonici. All rights reserved.</p>
-        <p i18n>
-          Services provided through
-          <a
-            class="no-print-href decoration-primary/40 hover:decoration-primary underline underline-offset-4 transition-all hover:decoration-2"
-            href="https://byebyeq.com"
-            rel="noopener noreferrer"
-            target="_blank"
-            >BYEBYEQ S.R.L.S.</a
-          >
-        </p>
+        <p>Napoli, Italia</p>
       </footer>
     </main>
 
@@ -1797,49 +1956,37 @@ export class HomeComponent implements OnInit {
     this.meta.updateTag({ name: 'twitter:description', content: description })
     this.meta.updateTag({ name: 'twitter:image', content: APP_IMAGE })
 
-    // JSON-LD structured data for ProfessionalService
-    const professionalServiceSchema = {
+    // JSON-LD structured data for Person (authority profile — no service offering)
+    const personSchema = {
       '@context': 'https://schema.org',
-      '@type': 'ProfessionalService',
-      name: 'Francesco Colamonici — Fractional Technical Architect',
+      '@type': 'Person',
+      name: 'Francesco Colamonici',
       image: APP_IMAGE,
       url: url,
-      logo: APP_LOGO,
-      priceRange: '$$$',
+      jobTitle: 'Solution Architect',
       address: {
         '@type': 'PostalAddress',
         addressLocality: 'Napoli',
         addressRegion: 'NA',
-        postalCode: '80038',
         addressCountry: 'IT',
       },
-      provider: {
-        '@type': 'Person',
-        name: 'Francesco Colamonici',
-        url: url,
-        sameAs: [
-          'https://www.linkedin.com/in/francesco-colamonici',
-          'https://github.com/fr-esco',
-          'https://stackoverflow.com/users/8682941',
-        ],
-        jobTitle: 'Fractional Technical Architect',
-        worksFor: {
-          '@type': 'Organization',
-          name: 'BYEBYEQ S.R.L.S.',
-          address: {
-            '@type': 'PostalAddress',
-            addressLocality: 'Napoli',
-            addressRegion: 'NA',
-            postalCode: '80134',
-            addressCountry: 'IT',
-            streetAddress: 'Corso Vittorio Emanuele, 499',
-          },
-          duns: '441078959',
-          taxID: 'NA-1036530',
-          url: 'https://byebyeq.com',
-          vatID: 'IT09499111210',
-        },
-      },
+      sameAs: [
+        'https://www.linkedin.com/in/francesco-colamonici',
+        'https://github.com/fr-esco',
+        'https://stackoverflow.com/users/8682941',
+      ],
+      knowsAbout: [
+        'Software Architecture',
+        'System Design',
+        'TypeScript',
+        'NestJS',
+        'Angular',
+        'React',
+        'Cloud Architecture',
+        'Cloud Cost Optimization',
+        'Multi-tenant SaaS',
+        'Web3',
+      ],
     }
 
     // JSON-LD structured data for FAQPage (AEO)
@@ -1849,18 +1996,18 @@ export class HomeComponent implements OnInit {
       mainEntity: [
         {
           '@type': 'Question',
-          name: $localize`What is a Fractional Technical Architect?`,
+          name: $localize`:@@faqSAvsSWQSchema:What is a Solution Architect, and how is it different from a Software Architect?`,
           acceptedAnswer: {
             '@type': 'Answer',
-            text: $localize`A Fractional Technical Architect provides senior-level software architecture, system design, and technology roadmap leadership on a part-time or project basis. This allows high-growth startups and scaleups to benefit from enterprise-grade technical guidance without the overhead of a full-time executive hire.`,
+            text: $localize`:@@faqSAvsSWASchema:A Solution Architect designs how software, data, and infrastructure fit together to solve a business problem end-to-end, bridging technical teams and stakeholders. A Software Architect focuses more narrowly on the internal structure of a single application. The Solution Architect owns the bigger picture: integration, scalability, cost, and delivery across systems.`,
           },
         },
         {
           '@type': 'Question',
-          name: $localize`How does a fractional engagement work?`,
+          name: $localize`:@@faqMultiTenantQSchema:What is multi-tenant SaaS architecture?`,
           acceptedAnswer: {
             '@type': 'Answer',
-            text: $localize`Engagements are flexible and tailored to your company's phase. Typical formats include weekly advisory retainers, deep-dive system design audits, cloud migration roadmap design, or helping you build, scale, and mentor your internal engineering team.`,
+            text: $localize`:@@faqMultiTenantASchema:Multi-tenant SaaS architecture serves many customers (tenants) from a single shared application while keeping each tenant's data logically or physically isolated. The main challenges are secure data isolation, per-tenant configuration, and cost-efficient scaling. Approaches range from a shared schema with a tenant key to a database-per-tenant model, chosen based on security, compliance, and scale.`,
           },
         },
         {
@@ -1873,16 +2020,24 @@ export class HomeComponent implements OnInit {
         },
         {
           '@type': 'Question',
-          name: $localize`Can you help audit and optimize cloud costs?`,
+          name: $localize`:@@faqCloudQSchema:How do you approach cloud cost and performance optimization?`,
           acceptedAnswer: {
             '@type': 'Answer',
-            text: $localize`Yes. I regularly perform cloud infrastructure audits to identify cost bottlenecks, eliminate resource waste, and optimize performance. In past engagements, this has led to significant pipeline speed improvements and up to 70% reduction in memory/cost footprints.`,
+            text: $localize`:@@faqCloudASchema:Cloud infrastructure audits to spot cost bottlenecks, cut resource waste, and tune performance. In past work this has driven major pipeline speed gains and up to 70% smaller memory and cost footprints.`,
+          },
+        },
+        {
+          '@type': 'Question',
+          name: $localize`:@@faqTechDebtQSchema:How can a team reduce technical debt without stopping delivery?`,
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: $localize`:@@faqTechDebtASchema:Treat technical debt as a business decision, not just cleanup: make it visible, prioritize the debt that slows delivery or raises risk, and pay it down incrementally alongside feature work. Strong Developer Experience (DevX) — fast CI/CD, good tooling, clear architecture — prevents most debt from accumulating in the first place.`,
           },
         },
       ],
     }
 
-    this.seoService.setStructuredData([professionalServiceSchema, faqSchema])
+    this.seoService.setStructuredData([personSchema, faqSchema])
   }
 
   public printPage() {

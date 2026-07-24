@@ -1,7 +1,7 @@
-export const APP_TITLE = 'Francesco Colamonici — Fractional Technical Architect'
+export const APP_TITLE = 'Francesco Colamonici — Solution Architect & System Design'
 export const APP_SITE_NAME = 'Francesco Colamonici'
 export const APP_DESCRIPTION =
-  'Fractional Technical Architect & System Design Specialist for high-growth scaleups. TypeScript, NestJS, and Cloud cost auditing.'
+  'Solution Architect & System Design specialist. 15 years of enterprise experience across Fortune-30 pharma, Web3 and scaleups. TypeScript, NestJS, cloud architecture & cost optimization.'
 export const APP_URL = 'https://francescocolamonici.it'
 // Social/OG image: JPEG for broad scraper compatibility (WebP is unreliable on
 // LinkedIn/Facebook). Versioned filename → safe to cache immutably; bump on change.

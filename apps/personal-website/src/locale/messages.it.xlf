@@ -82,37 +82,25 @@
           <context context-type="linenumber">78</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="1509582790882652936" datatype="html">
-        <source>Fractional Architect</source>
-        <target>Architect Fractional</target>
+      <trans-unit id="bioBadge" datatype="html">
+        <source>Solution Architect</source>
+        <target>Solution Architect</target>
         <context-group purpose="location">
           <context context-type="sourcefile">apps/personal-website/src/app/home.component.ts</context>
           <context context-type="linenumber">69,70</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="8567196800126169090" datatype="html">
-        <source> Fractional Technical Architect &amp; System Design for Startups &amp; Scaleups </source>
-        <target> Fractional Technical Architect & System Design per Startup & Scaleup </target>
+      <trans-unit id="heroHeading" datatype="html">
+        <source> Solution Architect &amp; System Design for Startups &amp; Scaleups </source>
+        <target> Solution Architect & System Design per Startup & Scaleup </target>
         <context-group purpose="location">
           <context context-type="sourcefile">apps/personal-website/src/app/home.component.ts</context>
           <context context-type="linenumber">225,226</context>
         </context-group>
       </trans-unit>
       <trans-unit id="heroLead" datatype="html">
-        <source> On-demand senior architecture for startups and scaleups — without a full-time hire. I design, review, and de-risk your systems with Developer Experience (DevX) at the core, turning technical debt into shipping velocity. From cloud cost audits and multi-tenant SaaS to cross-platform (Web/Desktop/Mobile) and Web3. Delivered through <x id="START_LINK" ctype="x-a" equiv-text="&lt;a
-              class=&quot;no-print-href hover:underline&quot;
-              href=&quot;https://byebyeq.com&quot;
-              rel=&quot;noopener noreferrer&quot;
-              target=&quot;_blank&quot;
-              &gt;"/>BYEBYEQ S.R.L.S.<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a
-            &gt;"/></source>
-        <target> Architettura senior on-demand per startup e scaleup — senza un'assunzione full-time. Progetto, revisiono e metto in sicurezza i tuoi sistemi con la Developer Experience (DevX) al centro, trasformando il debito tecnico in velocità di rilascio. Dai cost audit cloud ai SaaS multi-tenant, dal cross-platform (Web/Desktop/Mobile) al Web3. Servizi erogati tramite <x id="START_LINK" ctype="x-a" equiv-text="&lt;a
-              class=&quot;no-print-href hover:underline&quot;
-              href=&quot;https://byebyeq.com&quot;
-              rel=&quot;noopener noreferrer&quot;
-              target=&quot;_blank&quot;
-              &gt;"/>BYEBYEQ S.R.L.S.<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a
-            &gt;"/> </target>
+        <source> Solution Architect with 15 years of enterprise experience — from a Fortune-30 pharma leader (Walgreens Boots Alliance) to Web3 and early-stage startups. I design, review, and de-risk complex systems with Developer Experience (DevX) at the core, turning technical debt into shipping velocity. From cloud cost and multi-tenant SaaS to cross-platform (Web/Desktop/Mobile) and Web3. </source>
+        <target> Solution Architect con 15 anni di esperienza enterprise — da un leader farmaceutico Fortune 30 (Walgreens Boots Alliance) al Web3 e alle startup early-stage. Progetto, revisiono e riduco i rischi di sistemi complessi con la Developer Experience (DevX) al centro, trasformando il debito tecnico in velocità di rilascio. Dai costi cloud ai SaaS multi-tenant, dal cross-platform (Web/Desktop/Mobile) al Web3. </target>
         <context-group purpose="location">
           <context context-type="sourcefile">apps/personal-website/src/app/home.component.ts</context>
           <context context-type="linenumber">232,244</context>
@@ -174,9 +162,9 @@
           <context context-type="linenumber">381,382</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="943719751053039472" datatype="html">
-        <source>Fractional Architecture Advisory</source>
-        <target>Advisory Architetturale Fractional</target>
+      <trans-unit id="pillarAdvisory" datatype="html">
+        <source>Architecture Advisory &amp; Reviews</source>
+        <target>Advisory & Review Architetturali</target>
         <context-group purpose="location">
           <context context-type="sourcefile">apps/personal-website/src/app/home.component.ts</context>
           <context context-type="linenumber">417,418</context>
@@ -280,7 +268,7 @@
       </trans-unit>
       <trans-unit id="5714952523992337467" datatype="html">
         <source> Engineered token distribution and NFT minting platforms for early-stage startups. Integrated Stripe payments with crypto wallets via Viem and Wagmi, enabling seamless credit card NFT purchases alongside decentralized digital document certification. </source>
-        <target>Sviluppo di piattaforme per la distribuzione di token e il minting di NFT per startup. Integrazione di pagamenti Stripe con wallet crypto tramite Viem e Wagmi, consentendo l'acquisto di NFT con carta di credito e certificazione notarile su blockchain.</target>
+        <target>Sviluppo di piattaforme per la distribuzione di token e il minting di NFT per startup. Integrazione di pagamenti Stripe con wallet crypto tramite Viem e Wagmi, consentendo l'acquisto di NFT con carta di credito e certificazione su blockchain.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">apps/personal-website/src/app/home.component.ts</context>
           <context context-type="linenumber">524,527</context>
@@ -894,9 +882,9 @@
           <context context-type="linenumber">1435</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="1382774862868772520" datatype="html">
-        <source> Got questions about fractional services, technical advisory, or engagement models? Find answers below. </source>
-        <target>Hai domande sui servizi fractional, sulla consulenza tecnica o sui modelli di ingaggio? Trova le risposte qui sotto.</target>
+      <trans-unit id="faqIntro" datatype="html">
+        <source> Questions about architecture, system design, or cloud optimization? Find answers below. </source>
+        <target>Domande su architettura, system design o ottimizzazione cloud? Qui trovi le risposte.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">apps/personal-website/src/app/home.component.ts</context>
           <context context-type="linenumber">1441,1442</context>
@@ -950,21 +938,77 @@
           <context context-type="linenumber">1588,1591</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="8316204364714165323" datatype="html">
-        <source>Can you help audit and optimize cloud costs?</source>
-        <target>Puoi aiutare ad analizzare e ottimizzare i costi del cloud?</target>
+      <trans-unit id="faqCloudQ" datatype="html">
+        <source>How do you approach cloud cost and performance optimization?</source>
+        <target>Come affronti l'ottimizzazione di costi e performance sul cloud?</target>
         <context-group purpose="location">
           <context context-type="sourcefile">apps/personal-website/src/app/home.component.ts</context>
           <context context-type="linenumber">1607,1608</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="2867107994412199570" datatype="html">
-        <source> Yes. I regularly perform cloud infrastructure audits to identify cost bottlenecks, eliminate resource waste, and optimize performance. In past engagements, this has led to significant pipeline speed improvements and up to 70% reduction in memory/cost footprints. </source>
-        <target>Sì. Eseguo regolarmente audit delle infrastrutture cloud per individuare colli di bottiglia, eliminare sprechi di risorse e ottimizzare le prestazioni. Nelle collaborazioni passate, questo ha portato ad accelerazioni significative delle pipeline e riduzioni di risorse fino al 70%.</target>
+      <trans-unit id="faqCloudA" datatype="html">
+        <source> Cloud infrastructure audits to spot cost bottlenecks, cut resource waste, and tune performance. In past work this has driven major pipeline speed gains and up to 70% smaller memory and cost footprints. </source>
+        <target>Audit dell'infrastruttura cloud per individuare colli di bottiglia sui costi, eliminare sprechi di risorse e ottimizzare le performance. In lavori passati questo ha portato a forti guadagni di velocità nelle pipeline e a footprint di memoria e costi fino al 70% inferiori.</target>
+      </trans-unit>
+      <trans-unit id="faqCloudQSchema" datatype="html">
+        <source>How do you approach cloud cost and performance optimization?</source>
+        <target>Come affronti l'ottimizzazione di costi e performance sul cloud?</target>
+      </trans-unit>
+      <trans-unit id="faqCloudASchema" datatype="html">
+        <source>Cloud infrastructure audits to spot cost bottlenecks, cut resource waste, and tune performance. In past work this has driven major pipeline speed gains and up to 70% smaller memory and cost footprints.</source>
+        <target>Audit dell'infrastruttura cloud per individuare colli di bottiglia sui costi, eliminare sprechi di risorse e ottimizzare le performance. In lavori passati questo ha portato a forti guadagni di velocità nelle pipeline e a footprint di memoria e costi fino al 70% inferiori.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">apps/personal-website/src/app/home.component.ts</context>
           <context context-type="linenumber">1637,1640</context>
         </context-group>
+      </trans-unit>
+      <trans-unit id="faqSAvsSWQ" datatype="html">
+        <source>What is a Solution Architect, and how is it different from a Software Architect?</source>
+        <target>Cos'è un Solution Architect e in cosa differisce da un Software Architect?</target>
+      </trans-unit>
+      <trans-unit id="faqSAvsSWA" datatype="html">
+        <source>A Solution Architect designs how software, data, and infrastructure fit together to solve a business problem end-to-end, bridging technical teams and stakeholders. A Software Architect focuses more narrowly on the internal structure of a single application. The Solution Architect owns the bigger picture: integration, scalability, cost, and delivery across systems.</source>
+        <target>Un Solution Architect progetta come software, dati e infrastruttura si integrano per risolvere end-to-end un problema di business, facendo da ponte tra team tecnici e stakeholder. Un Software Architect si concentra più strettamente sulla struttura interna di una singola applicazione. Il Solution Architect governa il quadro d'insieme: integrazione, scalabilità, costi e rilascio tra più sistemi.</target>
+      </trans-unit>
+      <trans-unit id="faqMultiTenantQ" datatype="html">
+        <source>What is multi-tenant SaaS architecture?</source>
+        <target>Cos'è un'architettura SaaS multi-tenant?</target>
+      </trans-unit>
+      <trans-unit id="faqMultiTenantA" datatype="html">
+        <source>Multi-tenant SaaS architecture serves many customers (tenants) from a single shared application while keeping each tenant's data logically or physically isolated. The main challenges are secure data isolation, per-tenant configuration, and cost-efficient scaling. Approaches range from a shared schema with a tenant key to a database-per-tenant model, chosen based on security, compliance, and scale.</source>
+        <target>Un'architettura SaaS multi-tenant serve molti clienti (tenant) da un'unica applicazione condivisa, mantenendo i dati di ogni tenant isolati a livello logico o fisico. Le sfide principali sono l'isolamento sicuro dei dati, la configurazione per tenant e la scalabilità efficiente sui costi. Gli approcci vanno dallo schema condiviso con chiave di tenant al modello database-per-tenant, scelti in base a sicurezza, compliance e scala.</target>
+      </trans-unit>
+      <trans-unit id="faqTechDebtQ" datatype="html">
+        <source>How can a team reduce technical debt without stopping delivery?</source>
+        <target>Come si riduce il debito tecnico senza fermare i rilasci?</target>
+      </trans-unit>
+      <trans-unit id="faqTechDebtA" datatype="html">
+        <source>Treat technical debt as a business decision, not just cleanup: make it visible, prioritize the debt that slows delivery or raises risk, and pay it down incrementally alongside feature work. Strong Developer Experience (DevX) — fast CI/CD, good tooling, clear architecture — prevents most debt from accumulating in the first place.</source>
+        <target>Trattandolo come una decisione di business, non come semplice pulizia: renderlo visibile, dare priorità al debito che rallenta i rilasci o aumenta il rischio, e ripagarlo in modo incrementale insieme alle feature. Una solida Developer Experience (DevX) — CI/CD veloce, tooling adeguato, architettura chiara — evita a monte gran parte dell'accumulo.</target>
+      </trans-unit>
+      <trans-unit id="faqSAvsSWQSchema" datatype="html">
+        <source>What is a Solution Architect, and how is it different from a Software Architect?</source>
+        <target>Cos'è un Solution Architect e in cosa differisce da un Software Architect?</target>
+      </trans-unit>
+      <trans-unit id="faqSAvsSWASchema" datatype="html">
+        <source>A Solution Architect designs how software, data, and infrastructure fit together to solve a business problem end-to-end, bridging technical teams and stakeholders. A Software Architect focuses more narrowly on the internal structure of a single application. The Solution Architect owns the bigger picture: integration, scalability, cost, and delivery across systems.</source>
+        <target>Un Solution Architect progetta come software, dati e infrastruttura si integrano per risolvere end-to-end un problema di business, facendo da ponte tra team tecnici e stakeholder. Un Software Architect si concentra più strettamente sulla struttura interna di una singola applicazione. Il Solution Architect governa il quadro d'insieme: integrazione, scalabilità, costi e rilascio tra più sistemi.</target>
+      </trans-unit>
+      <trans-unit id="faqMultiTenantQSchema" datatype="html">
+        <source>What is multi-tenant SaaS architecture?</source>
+        <target>Cos'è un'architettura SaaS multi-tenant?</target>
+      </trans-unit>
+      <trans-unit id="faqMultiTenantASchema" datatype="html">
+        <source>Multi-tenant SaaS architecture serves many customers (tenants) from a single shared application while keeping each tenant's data logically or physically isolated. The main challenges are secure data isolation, per-tenant configuration, and cost-efficient scaling. Approaches range from a shared schema with a tenant key to a database-per-tenant model, chosen based on security, compliance, and scale.</source>
+        <target>Un'architettura SaaS multi-tenant serve molti clienti (tenant) da un'unica applicazione condivisa, mantenendo i dati di ogni tenant isolati a livello logico o fisico. Le sfide principali sono l'isolamento sicuro dei dati, la configurazione per tenant e la scalabilità efficiente sui costi. Gli approcci vanno dallo schema condiviso con chiave di tenant al modello database-per-tenant, scelti in base a sicurezza, compliance e scala.</target>
+      </trans-unit>
+      <trans-unit id="faqTechDebtQSchema" datatype="html">
+        <source>How can a team reduce technical debt without stopping delivery?</source>
+        <target>Come si riduce il debito tecnico senza fermare i rilasci?</target>
+      </trans-unit>
+      <trans-unit id="faqTechDebtASchema" datatype="html">
+        <source>Treat technical debt as a business decision, not just cleanup: make it visible, prioritize the debt that slows delivery or raises risk, and pay it down incrementally alongside feature work. Strong Developer Experience (DevX) — fast CI/CD, good tooling, clear architecture — prevents most debt from accumulating in the first place.</source>
+        <target>Trattandolo come una decisione di business, non come semplice pulizia: renderlo visibile, dare priorità al debito che rallenta i rilasci o aumenta il rischio, e ripagarlo in modo incrementale insieme alle feature. Una solida Developer Experience (DevX) — CI/CD veloce, tooling adeguato, architettura chiara — evita a monte gran parte dell'accumulo.</target>
       </trans-unit>
       <trans-unit id="4641957542512427572" datatype="html">
         <source>© 2011-2026 Francesco Colamonici. All rights reserved.</source>
